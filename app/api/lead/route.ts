@@ -1,5 +1,4 @@
 import { google } from "googleapis";
-import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 export const runtime = "nodejs";
@@ -10,19 +9,18 @@ const sheetMap: Record<string, string> = {
   beta: "beta",
 };
 
-async function getAuthClient() {
+function getAuth() {
   const credentialsPath = path.join(process.cwd(), "credentials.json");
-  const raw = await readFile(credentialsPath, "utf-8");
+  const raw = require("fs").readFileSync(credentialsPath, "utf-8");
   const credentials = JSON.parse(raw);
   if (credentials.private_key) {
     credentials.private_key = credentials.private_key.replace(/\\n/g, "\n");
   }
 
-  const auth = new google.auth.GoogleAuth({
+  return new google.auth.GoogleAuth({
     credentials,
     scopes: ["https://www.googleapis.com/auth/spreadsheets"],
   });
-  return auth.getClient();
 }
 
 export async function POST(request: Request) {
@@ -37,8 +35,8 @@ export async function POST(request: Request) {
       return Response.json({ error: "Missing required fields." }, { status: 400 });
     }
 
-    const authClient = await getAuthClient();
-    const sheets = google.sheets({ version: "v4", auth: authClient });
+    const auth = getAuth();
+    const sheets = google.sheets({ version: "v4", auth });
     const range = `${sheetMap[type]}!A:D`;
     const values = [[new Date().toISOString(), name, email, zip]];
 
