@@ -634,29 +634,249 @@ input {
   }
 }
 
+/* Mobile menu styles */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid var(--stroke);
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--ink);
+  margin: 4px 0;
+  transition: transform 0.3s ease;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.mobile-nav.open {
+  display: flex;
+}
+
+.mobile-nav a {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.mobile-nav-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .hero-copy {
+    top: 0;
+  }
+
+  .control-copy {
+    top: 0;
+  }
+}
+
 @media (max-width: 720px) {
   main {
-    gap: 100px;
+    gap: 80px;
+    padding: 24px 5vw;
   }
+
+  header {
+    padding: 16px 0 8px;
+  }
+
   nav {
     display: none;
   }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  header .btn-ghost {
+    display: none;
+  }
+
   .hero {
     min-height: auto;
     padding: 24px 0 20px;
+    grid-template-columns: 1fr;
   }
+
+  .hero-copy {
+    top: 0;
+  }
+
   .hero h1 {
-    font-size: clamp(36px, 9vw, 52px);
+    font-size: clamp(32px, 8vw, 48px);
   }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+    padding: 16px 24px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    padding: 16px;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .section h2 {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .control-layout {
+    grid-template-columns: 1fr;
+    padding-top: 24px;
+  }
+
+  .control-copy {
+    top: 0;
+  }
+
   .phone-stack {
-    min-height: 460px;
+    min-height: auto;
+    padding: 20px 0;
   }
+
   .phone-frame {
     position: relative;
+    transform: none !important;
   }
+
   .phone-frame:nth-child(1),
-  .phone-frame:nth-child(2),
   .phone-frame:nth-child(3) {
-    transform: none;
+    display: none;
+  }
+
+  .phone-frame:nth-child(2) {
+    transform: none !important;
+  }
+
+  .phone-image {
+    max-width: 280px;
+  }
+
+  .preorder {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .preorder input,
+  .modal-form input {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 16px 24px;
+    font-size: 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .modal-overlay {
+    padding: 16px;
+  }
+
+  .modal {
+    padding: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal-header h3 {
+    font-size: 20px;
+  }
+
+  .modal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 16px 4vw;
+    gap: 60px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .kicker {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .phone-image {
+    max-width: 240px;
   }
 }
