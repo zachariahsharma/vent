@@ -217,7 +217,7 @@ export default function Home() {
         <nav>
           <a href="#technology">Technology</a>
           <a href="#control">Control</a>
-          <a href="#media">Media</a>
+          {/* <a href="#media">Media</a> */}
           <a href="#reviews">Reviews</a>
           <a href="#preorder">Pre-order</a>
         </nav>
@@ -426,6 +426,7 @@ export default function Home() {
         </div>
       </motion.section>
 
+      {/*
       <motion.section
         id="media"
         className="section"
@@ -473,6 +474,7 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+      */}
 
       {/*
       <motion.section
