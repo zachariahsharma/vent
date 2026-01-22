@@ -25,17 +25,18 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN adduser --system --uid 1001 nextjs
+RUN groupadd -g 1001 nextjs && useradd -m -u 1001 -g 1001 -s /usr/sbin/nologin nextjs
 
 COPY --from=builder /app/public ./public
+COPY --from=builder /app/package.json ./package.json
 
 # Set the correct permission for prerender cache
 RUN mkdir .next
-RUN chown nextjs:bun .next
+RUN chown nextjs:nextjs .next
 
 # Automatically leverage output traces to reduce image size
-COPY --from=builder --chown=nextjs:bun /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:bun /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nextjs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nextjs /app/.next/static ./.next/static
 
 USER nextjs
 
