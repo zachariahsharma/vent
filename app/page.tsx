@@ -7,6 +7,7 @@ import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 export default function Home() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [isBetaOpen, setIsBetaOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [preorderStatus, setPreorderStatus] = useState("");
   const [betaStatus, setBetaStatus] = useState("");
   const [preorderPending, setPreorderPending] = useState(false);
@@ -188,7 +189,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (!isBetaOpen && !isVideoOpen) return;
+    if (!isBetaOpen && !isVideoOpen && !isMobileMenuOpen) return;
     const scrollBarWidth =
       window.innerWidth - document.documentElement.clientWidth;
     const originalOverflow = document.body.style.overflow;
@@ -201,7 +202,7 @@ export default function Home() {
       document.body.style.overflow = originalOverflow;
       document.body.style.paddingRight = originalPadding;
     };
-  }, [isBetaOpen, isVideoOpen]);
+  }, [isBetaOpen, isVideoOpen, isMobileMenuOpen]);
 
   return (
     <main>
@@ -217,14 +218,51 @@ export default function Home() {
         <nav>
           <a href="#technology">Technology</a>
           <a href="#control">Control</a>
-          <a href="#media">Media</a>
+          {/* <a href="#media">Media</a> */}
           <a href="#reviews">Reviews</a>
           <a href="#preorder">Pre-order</a>
         </nav>
         <button className="btn btn-ghost" onClick={openBetaModal}>
           Get early access
         </button>
+        <button
+          className="mobile-menu-btn"
+          onClick={() => setIsMobileMenuOpen(true)}
+          aria-label="Open menu"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </header>
+
+      <div className={`mobile-nav ${isMobileMenuOpen ? "open" : ""}`}>
+        <button
+          className="mobile-nav-close"
+          onClick={() => setIsMobileMenuOpen(false)}
+          aria-label="Close menu"
+        >
+          ✕
+        </button>
+        <a href="#technology" onClick={() => setIsMobileMenuOpen(false)}>
+          Technology
+        </a>
+        <a href="#control" onClick={() => setIsMobileMenuOpen(false)}>
+          Control
+        </a>
+        <a href="#preorder" onClick={() => setIsMobileMenuOpen(false)}>
+          Pre-order
+        </a>
+        <button
+          className="btn btn-primary"
+          onClick={() => {
+            setIsMobileMenuOpen(false);
+            openBetaModal();
+          }}
+        >
+          Get early access
+        </button>
+      </div>
 
       <section className="hero">
         <div className="hero-bg" aria-hidden="true" />
@@ -426,6 +464,7 @@ export default function Home() {
         </div>
       </motion.section>
 
+      {/*
       <motion.section
         id="media"
         className="section"
@@ -473,6 +512,7 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+      */}
 
       {/*
       <motion.section
