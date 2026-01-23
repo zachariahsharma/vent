@@ -22,7 +22,7 @@ export default function Home() {
   const betaSeenKey = "vynte_beta_modal_seen";
   const betaTimerRef = useRef<number | null>(null);
   const sheetUrl = process.env.NEXT_PUBLIC_VYNTE_SHEETS_CSV_URL;
-  const title = "Cold-air precision for every room, without wasting energy.";
+  const title = "Temperature precision for every room, without wasting energy.";
   const container = {
     hidden: { opacity: 0, y: 12 },
     show: {
@@ -630,7 +630,7 @@ export default function Home() {
                 </div>
                 <p>
                   Showcase how servo-controlled vents, temperature pucks, and
-                  the app orchestrate cold-air precision without wasting energy.
+                  the app orchestrate temperature precision without wasting energy.
                 </p>
               </div>
             </motion.div>
