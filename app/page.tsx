@@ -219,7 +219,7 @@ export default function Home() {
           <a href="#technology">Technology</a>
           <a href="#control">Control</a>
           {/* <a href="#media">Media</a> */}
-          <a href="#reviews">Reviews</a>
+          {/* <a href="#reviews">Reviews</a> */}
           <a href="#preorder">Pre-order</a>
         </nav>
         <button className="btn btn-ghost" onClick={openBetaModal}>
