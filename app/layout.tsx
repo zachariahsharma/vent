@@ -16,7 +16,7 @@ const space = Space_Grotesk({
 export const metadata = {
   title: "Vynte | Smart Ventilation, Room by Room",
   description:
-    "Servo-controlled vents, smart temperature pucks, and app-driven comfort with energy savings.",
+    "Vynte delivers room-by-room temperature control with smart vents, wireless sensors, and app-based automation that works with existing HVAC.",
 };
 
 export default function RootLayout({

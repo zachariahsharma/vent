@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 
 export default function Home() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -12,18 +12,8 @@ export default function Home() {
   const [betaStatus, setBetaStatus] = useState("");
   const [preorderPending, setPreorderPending] = useState(false);
   const [betaPending, setBetaPending] = useState(false);
-  const [sheetRows, setSheetRows] = useState<
-    Array<{
-      section: string;
-      title: string;
-      subtitle?: string;
-      value?: string;
-    }>
-  >([]);
-  const betaSeenKey = "vynte_beta_modal_seen";
   const betaTimerRef = useRef<number | null>(null);
-  const sheetUrl = process.env.NEXT_PUBLIC_VYNTE_SHEETS_CSV_URL;
-  const title = "Temperature precision for every room, without wasting energy.";
+  const title = "Every room. The right temperature. Automatically.";
   const container = {
     hidden: { opacity: 0, y: 12 },
     show: {
@@ -88,77 +78,14 @@ export default function Home() {
     }
   };
 
-  const parseCsv = (csvText: string) => {
-    const lines = csvText.trim().split("\n");
-    if (lines.length < 2) return [];
-    const headers = lines[0].split(",").map((value) => value.trim());
-    return lines.slice(1).map((line) => {
-      const values = line.split(",").map((value) => value.trim());
-      return headers.reduce<Record<string, string>>((acc, header, index) => {
-        acc[header] = values[index] || "";
-        return acc;
-      }, {});
-    });
-  };
-
-  const statsData = useMemo(() => {
-    const rows = sheetRows.filter((row) => row.section === "stats");
-    if (rows.length) {
-      return rows.map((row) => ({
-        title: row.value || row.title,
-        subtitle: row.subtitle || "",
-      }));
-    }
-    return [
-      { title: "Up to 28%", subtitle: "Projected energy savings" },
-      { title: "Room-level AI", subtitle: "Smart balancing per vent" },
-      { title: "Quiet airflow", subtitle: "Servo motion under 30 dB" },
-    ];
-  }, [sheetRows]);
-
   const appScreens = [
     "/MobileUIScreenshots/localhost_63048_(iPhone 14 Pro Max) (1).png",
     "/MobileUIScreenshots/localhost_63048_(iPhone 14 Pro Max).png",
     "/MobileUIScreenshots/localhost_63048_(iPhone 14 Pro Max) (2).png",
   ];
 
-  const mediaData = useMemo(() => {
-    const rows = sheetRows.filter((row) => row.section === "media");
-    if (rows.length) {
-      return rows.map((row) => row.title);
-    }
-    return [
-      "Hero Video Placeholder",
-      "Lifestyle Image",
-      "Vent Close-up",
-      "App Demo Clip",
-      "Temperature Puck Macro",
-      "Installation Timelapse",
-    ];
-  }, [sheetRows]);
-
-  useEffect(() => {
-    if (!sheetUrl) return;
-    const controller = new AbortController();
-    fetch(sheetUrl, { signal: controller.signal })
-      .then((response) => response.text())
-      .then((text) => {
-        const parsed = parseCsv(text);
-        const normalized = parsed.map((row) => ({
-          section: (row.section || "").toLowerCase(),
-          title: row.title || "",
-          subtitle: row.subtitle || "",
-          value: row.value || "",
-        }));
-        setSheetRows(normalized);
-      })
-      .catch(() => {});
-    return () => controller.abort();
-  }, [sheetUrl]);
-
   const openBetaModal = () => {
     setIsBetaOpen(true);
-    sessionStorage.setItem(betaSeenKey, "true");
     if (betaTimerRef.current) {
       window.clearTimeout(betaTimerRef.current);
       betaTimerRef.current = null;
@@ -167,7 +94,6 @@ export default function Home() {
 
   const closeBetaModal = () => {
     setIsBetaOpen(false);
-    sessionStorage.setItem(betaSeenKey, "true");
     if (betaTimerRef.current) {
       window.clearTimeout(betaTimerRef.current);
       betaTimerRef.current = null;
@@ -175,10 +101,9 @@ export default function Home() {
   };
 
   useEffect(() => {
-    if (sessionStorage.getItem(betaSeenKey)) return;
     betaTimerRef.current = window.setTimeout(() => {
       openBetaModal();
-    }, 30000);
+    }, 1200);
 
     return () => {
       if (betaTimerRef.current) {
@@ -289,30 +214,24 @@ export default function Home() {
             ))}
           </motion.h1>
           <motion.p variants={item}>
-            Vynte pairs servo-controlled vents, smart temperature pucks, and
-            Nest + Ecobee integrations with a room-by-room mobile experience.
-            Enjoy the comfort you want with the savings you expect.
+            Room-by-room temperature control for existing HVAC systems.
+            Smart vents, wireless pucks, and app control in one setup.
           </motion.p>
+          <motion.div className="hero-chips" variants={item}>
+            <span className="chip">Works with existing vents</span>
+            <span className="chip">Nest + Ecobee compatible</span>
+            <span className="chip">Install with two screws</span>
+          </motion.div>
           <motion.div className="hero-actions" variants={item}>
-            <button className="btn btn-primary">Reserve your system</button>
+            <button className="btn btn-primary" onClick={openBetaModal}>
+              Reserve your system
+            </button>
             <button
               className="btn btn-ghost"
               onClick={() => setIsVideoOpen(true)}
             >
               Watch the airflow story
             </button>
-          </motion.div>
-          <motion.div className="stats" variants={item}>
-            {statsData.map((stat, index) => (
-              <motion.div
-                className="stat"
-                variants={item}
-                key={stat.title + index}
-              >
-                <strong>{stat.title}</strong>
-                <p>{stat.subtitle}</p>
-              </motion.div>
-            ))}
           </motion.div>
         </motion.div>
         <motion.div
@@ -324,20 +243,57 @@ export default function Home() {
           <div className="orbit one" />
           <div className="orbit two" />
           <div className="glass">
-            <span className="tag">Live comfort map</span>
-            <h3>Room Airflow Matrix</h3>
+            <span className="tag">How it works</span>
+            <h3>Room-by-room balancing</h3>
             <p>
-              Placeholder for real-time airflow visualization, comfort zones,
-              and per-room targets.
+              Each room&apos;s puck reports temperature, then Vynte automatically
+              adjusts vent positions to keep comfort consistent across your
+              home.
             </p>
           </div>
           <div className="glass">
-            <span className="tag">Mobile command</span>
-            <h3>Vynte App Preview</h3>
-            <p>Insert app screenshots from `vynte_ui` here.</p>
+            <span className="tag">Simple install</span>
+            <h3>Swap vents in minutes</h3>
+            <p>
+              Remove your existing vent with two screws, install Vynte, and
+              connect in the app. No major renovation required.
+            </p>
           </div>
         </motion.div>
       </section>
+
+      <motion.section
+        className="proof-strip reveal"
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.article
+          className="proof-card"
+          whileHover={{ y: -4, scale: 1.01 }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
+        >
+          <span>Problem</span>
+          <strong>87% report uneven room temperatures</strong>
+        </motion.article>
+        <motion.article
+          className="proof-card"
+          whileHover={{ y: -4, scale: 1.01 }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
+        >
+          <span>Battery life</span>
+          <strong>Up to 2 years per device</strong>
+        </motion.article>
+        <motion.article
+          className="proof-card"
+          whileHover={{ y: -4, scale: 1.01 }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
+        >
+          <span>Planned starter price</span>
+          <strong>$79.99 for vent + puck</strong>
+        </motion.article>
+      </motion.section>
 
       <motion.section
         id="technology"
@@ -349,39 +305,31 @@ export default function Home() {
       >
         <div>
           <span className="tag">Technology</span>
-          <h2>Servo vents, temperature pucks, and intelligent balancing.</h2>
-          <p>
-            Vynte rethinks HVAC distribution with adaptive vents and sensors
-            that continuously learn your home&apos;s comfort profile.
-          </p>
+          <h2>Hardware + software built to balance every room.</h2>
         </div>
         <div className="card-grid stagger">
           <article className="card">
             <h3>Servo-Controlled Vents</h3>
             <p>
-              Micro-servo precision tunes airflow per room and responds in
-              seconds, not hours.
+              Wi-Fi vents modulate airflow in real time.
             </p>
           </article>
           <article className="card">
             <h3>Temperature Pucks</h3>
             <p>
-              Battery-friendly sensors track comfort where you live, not just at
-              the thermostat.
+              Wireless sensors track local room temperature.
             </p>
           </article>
           <article className="card">
             <h3>Nest + Ecobee Sync</h3>
             <p>
-              Layer Vynte&apos;s room intelligence on top of your favorite smart
-              thermostat ecosystem.
+              Coordinates HVAC runtime with smart thermostat APIs.
             </p>
           </article>
           <article className="card">
             <h3>Auto Balancing</h3>
             <p>
-              Energy savings grow as the system learns patterns, occupancy, and
-              seasonal airflow trends.
+              Control logic adjusts vent positions automatically.
             </p>
           </article>
         </div>
@@ -397,7 +345,7 @@ export default function Home() {
       >
         <div className="control-copy">
           <span className="tag">Room control</span>
-          <h2>One tap comfort, room by room.</h2>
+          <h2>Fast, clear control in the Vynte app.</h2>
         </div>
         <div className="control-layout">
           <div className="phone-stack">
@@ -416,18 +364,16 @@ export default function Home() {
           </div>
           <div className="card-grid">
             <div className="card">
-              <h3>Room-by-Room Timeline</h3>
-              <p>Space for animated schedules, routines, and energy visuals.</p>
+              <h3>Create Rooms</h3>
+              <p>Group vents and pucks by bedroom, office, or zone.</p>
             </div>
             <div className="card">
-              <h3>Sensor Network Map</h3>
-              <p>Drop in graphics showing puck distribution and live temps.</p>
+              <h3>Set Room Targets</h3>
+              <p>Pick a target temperature per room.</p>
             </div>
             <div className="card">
-              <h3>Automation Scenes</h3>
-              <p>
-                Show your smart scenes, comfort presets, and occupancy logic.
-              </p>
+              <h3>Manual Vent Control</h3>
+              <p>Override with precise open and close settings anytime.</p>
             </div>
           </div>
         </div>
@@ -441,123 +387,28 @@ export default function Home() {
         transition={{ duration: 0.7 }}
       >
         <div>
-          <span className="tag">Energy savings</span>
-          <h2>Comfort that pays for itself.</h2>
-          <p>
-            Highlight real savings data, rebates, and smart automation results
-            here once you have metrics to share.
-          </p>
+          <span className="tag">Why Vynte</span>
+          <h2>A simpler path to room-by-room comfort.</h2>
         </div>
         <div className="card-grid">
           <div className="card">
-            <h3>Monthly Savings</h3>
-            <p>Placeholder for real charts and cost offsets.</p>
+            <h3>Affordable entry point</h3>
+            <p>
+              Planned starter pricing from $79.99.
+            </p>
           </div>
           <div className="card">
-            <h3>Usage Forecast</h3>
-            <p>Show projections for summer and winter loads.</p>
+            <h3>Quiet operation</h3>
+            <p>
+              Designed for bedrooms, nurseries, and offices.
+            </p>
           </div>
           <div className="card">
-            <h3>Live Impact Dashboard</h3>
-            <p>Space for data-driven animations and impact counters.</p>
+            <h3>Simple deployment</h3>
+            <p>No ductwork replacement. Expand room by room.</p>
           </div>
         </div>
       </motion.section>
-
-      {/*
-      <motion.section
-        id="media"
-        className="section"
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.7 }}
-      >
-        <div>
-          <span className="tag">Media</span>
-          <h2>Make the system feel tangible.</h2>
-          <p>
-            Drop in product photography, installation videos, and lifestyle
-            footage to make Vynte feel immediate.
-          </p>
-        </div>
-        <div className="media-grid">
-          {mediaData.map((label) => (
-            <div className="media-tile" key={label}>
-              {label}
-            </div>
-          ))}
-        </div>
-        <div className="media-assets">
-          <div className="media-video">
-            <video controls playsInline preload="metadata">
-              <source src="/Video.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div className="media-render">
-            <Image
-              src="/step-renders/vent-closed.png"
-              alt="Vynte vent assembly closed"
-              width={900}
-              height={650}
-            />
-          </div>
-          <div className="media-render">
-            <Image
-              src="/step-renders/vent-open.png"
-              alt="Vynte vent assembly open"
-              width={900}
-              height={650}
-            />
-          </div>
-        </div>
-      </motion.section>
-      */}
-
-      {/*
-      <motion.section
-        id="reviews"
-        className="section"
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.7 }}
-      >
-        <div>
-          <span className="tag">Reviews</span>
-          <h2>Early access feedback and comfort stories.</h2>
-          <p>
-            Add real testimonials, star ratings, and case studies once you
-            collect them.
-          </p>
-        </div>
-        <div className="card-grid">
-          <article className="card review">
-            <strong>★★★★★ Placeholder Review</strong>
-            <p>
-              “We finally stopped fighting over the thermostat. Vynte nailed the
-              airflow.”
-            </p>
-            <span>— Smart home beta tester</span>
-          </article>
-          <article className="card review">
-            <strong>★★★★★ Placeholder Review</strong>
-            <p>
-              “The app feels like having a thermostat in every room, without the
-              extra energy.”
-            </p>
-            <span>— Energy-conscious family</span>
-          </article>
-          <article className="card review">
-            <strong>★★★★★ Placeholder Review</strong>
-            <p>
-              “Quiet vents, big impact. Our home finally feels balanced.”
-            </p>
-            <span>— HVAC installer partner</span>
-          </article>
-        </div>
-      </motion.section>
-      */}
 
       <motion.section
         id="preorder"
@@ -569,11 +420,8 @@ export default function Home() {
       >
         <div>
           <span className="tag">Pre-order</span>
-          <h2>Be first to experience Vynte.</h2>
-          <p>
-            Capture interest, pricing tiers, and early access deposits when
-            you&apos;re ready. This block is ready for your data.
-          </p>
+          <h2>Be first to bring room-level comfort home.</h2>
+          <p>Get launch pricing, timeline updates, and early-access offers.</p>
         </div>
         <form
           onSubmit={(event) =>
@@ -625,7 +473,7 @@ export default function Home() {
           />
         </div>
         <span>Smart comfort, room by room.</span>
-        <span>Built for energy efficiency and quiet airflow.</span>
+        <span>Built for precision airflow and quiet operation.</span>
       </footer>
 
       <AnimatePresence>
@@ -669,8 +517,7 @@ export default function Home() {
                   </video>
                 </div>
                 <p>
-                  Showcase how servo-controlled vents, temperature pucks, and
-                  the app orchestrate temperature precision without wasting energy.
+                  Watch Vynte balance airflow across rooms in real time.
                 </p>
               </div>
             </motion.div>
@@ -688,36 +535,56 @@ export default function Home() {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="modal"
+              className="modal beta-modal"
               onClick={(event) => event.stopPropagation()}
               initial={{ opacity: 0, y: 20, scale: 0.98 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 20, scale: 0.98 }}
-              transition={{ duration: 0.25 }}
+              transition={{ duration: 0.28 }}
               role="dialog"
               aria-modal="true"
               aria-label="Join the beta test"
             >
-              <div className="modal-header">
-                <div>
-                  <span className="tag">Beta access</span>
-                  <h3>Join the Vynte beta test</h3>
-                </div>
-                <button
-                  className="modal-close"
-                  type="button"
-                  onClick={closeBetaModal}
-                  aria-label="Close"
-                >
-                  ✕
-                </button>
-              </div>
-              <div className="modal-body">
+              <div className="beta-companion">
+                <span className="tag">Why Vynte</span>
+                <h3>Every room. The right temperature. Automatically.</h3>
                 <p>
-                  We are opening a limited beta for homes ready to test
-                  room-by-room comfort, energy savings, and smart vent
-                  automation.
+                  Smart vents and wireless pucks coordinate airflow room by room
+                  using your existing HVAC setup.
                 </p>
+                <ul className="beta-points">
+                  <li>Nest + Ecobee compatible</li>
+                  <li>Two-screw installation</li>
+                  <li>Room-by-room control in the app</li>
+                </ul>
+                <div className="video-frame video-frame-dark">
+                  <video controls playsInline preload="metadata">
+                    <source src="/Video.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+
+              <div className="beta-form-panel">
+                <div className="modal-header">
+                  <div>
+                    <span className="tag">Beta access</span>
+                    <h3>Join the Vynte beta test</h3>
+                  </div>
+                  <button
+                    className="modal-close"
+                    type="button"
+                    onClick={closeBetaModal}
+                    aria-label="Close"
+                  >
+                    ✕
+                  </button>
+                </div>
+                <div className="modal-body">
+                  <p>
+                    We are onboarding a limited group of early homes and
+                    smart-home users before full launch.
+                  </p>
+                </div>
                 <form
                   className="modal-form"
                   onSubmit={(event) =>
@@ -760,14 +627,15 @@ export default function Home() {
                   <div className="modal-card">
                     <strong>What you get</strong>
                     <p>
-                      Early hardware access, guided install, and priority app
-                      updates.
+                      Early hardware access, guided onboarding, and direct
+                      support from the team.
                     </p>
                   </div>
                   <div className="modal-card">
                     <strong>What we need</strong>
                     <p>
-                      Usage feedback, comfort logs, and installation insights.
+                      Room comfort feedback, app usage insights, and install
+                      notes from real homes.
                     </p>
                   </div>
                 </div>
