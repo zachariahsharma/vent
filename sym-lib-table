@@ -1,4 +1,7 @@
 (sym_lib_table
   (version 7)
   (lib (name "MCP9808T-E_MS")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/MCP9808T-E_MS.kicad_sym")(options "")(descr ""))
+  (lib (name "TYPE-C-31-M-12")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/TYPE-C-31-M-12.kicad_sym")(options "")(descr ""))
+  (lib (name "AP2112K-3.3TRG1")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/AP2112K-3.3TRG1.kicad_sym")(options "")(descr ""))
+  (lib (name "CP2102N-A02-GQFN28R")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/CP2102N-A02-GQFN28R.kicad_sym")(options "")(descr ""))
 )
