@@ -4312,7 +4312,7 @@
 	)
 	(text "Autoprogramming Circuit"
 		(exclude_from_sim no)
-		(at 36.068 146.05 0)
+		(at 43.942 145.542 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4361,6 +4361,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1291736-c515-444e-b1d7-29e2dcdba97a")
+	)
+	(wire
+		(pts
+			(xy 354.33 102.87) (xy 356.87 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "038fb16c-e74c-4a7f-ae7d-e1644bee1acf")
 	)
 	(wire
 		(pts
@@ -5054,6 +5064,16 @@
 	)
 	(wire
 		(pts
+			(xy 354.33 107.95) (xy 356.87 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc9a42bd-5ecc-424b-8563-914748ef393c")
+	)
+	(wire
+		(pts
 			(xy 27.94 83.82) (xy 30.48 83.82)
 		)
 		(stroke
@@ -5402,6 +5422,50 @@
 			)
 		)
 	)
+	(global_label "IO0"
+		(shape input)
+		(at 354.33 107.95 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c83745bc-feab-4db8-aa85-352f9f970303")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 348.2 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EN"
+		(shape input)
+		(at 354.33 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1953774-0267-4a55-9a2f-deac3ecf330b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 348.8653 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "IO13"
 		(shape input)
 		(at 353.06 140.97 180)
@@ -5470,7 +5534,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NPN,S8050 J3Y 200-350")
-		(at 109.22 190.5 0)
+		(at 85.09 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5479,7 +5543,7 @@
 		(fields_autoplaced yes)
 		(uuid "049eb982-a170-4551-b172-26b01550ae28")
 		(property "Reference" "Q1"
-			(at 114.3 189.2299 0)
+			(at 90.17 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5488,7 +5552,7 @@
 			)
 		)
 		(property "Value" "S8050 J3Y 200-350"
-			(at 114.3 191.77 0)
+			(at 90.17 163.83 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -5497,7 +5561,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
-			(at 107.442 190.5 90)
+			(at 83.312 162.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5506,7 +5570,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2310131500_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--S8050-J3Y-RANGE-200-350_C2146.pdf"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5515,7 +5579,7 @@
 			)
 		)
 		(property "Description" "25V 300mW 200@50mA,1V 500mA NPN SOT-23 Bipolar (BJT) ROHS"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5524,7 +5588,7 @@
 			)
 		)
 		(property "LCSC" "C2146"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5533,7 +5597,7 @@
 			)
 		)
 		(property "Stock" "1211209"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5542,7 +5606,7 @@
 			)
 		)
 		(property "Price" "0.017USD"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5551,7 +5615,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5560,7 +5624,7 @@
 			)
 		)
 		(property "Minimum Qty" "10"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5569,7 +5633,7 @@
 			)
 		)
 		(property "Attrition Qty" "5"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5578,7 +5642,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5587,7 +5651,7 @@
 			)
 		)
 		(property "Category" "Transistors,Bipolar Transistors - BJT"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5596,7 +5660,7 @@
 			)
 		)
 		(property "Manufacturer" "Changjiang Electronics Tech (CJ)"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5605,7 +5669,7 @@
 			)
 		)
 		(property "Part" "S8050 J3Y(RANGE:200-350)"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5614,7 +5678,7 @@
 			)
 		)
 		(property "Transition Frequency (fT)" "150MHz"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5623,7 +5687,7 @@
 			)
 		)
 		(property "Operating Temperature" "-55°C~+150°C"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5632,7 +5696,7 @@
 			)
 		)
 		(property "Collector Cut-Off Current (Icbo)" "100nA"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5641,7 +5705,7 @@
 			)
 		)
 		(property "Transistor Type" "NPN"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5650,7 +5714,7 @@
 			)
 		)
 		(property "DC Current Gain (hFE@Ic,Vce)" "200@500mA,1V"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5659,7 +5723,7 @@
 			)
 		)
 		(property "Power Dissipation (Pd)" "300mW"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5668,7 +5732,7 @@
 			)
 		)
 		(property "Collector Current (Ic)" "500mA"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5677,7 +5741,7 @@
 			)
 		)
 		(property "Collector-Emitter Saturation Voltage (VCE(sat)@Ic,Ib)" "600mV@500mA,50mA"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5686,7 +5750,7 @@
 			)
 		)
 		(property "Collector-Emitter Breakdown Voltage (Vceo)" "25V"
-			(at 109.22 190.5 0)
+			(at 85.09 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
