@@ -5092,13 +5092,23 @@
 	)
 	(text "Temperature Sensor"
 		(exclude_from_sim no)
-		(at 340.106 24.384 0)
+		(at 328.422 19.05 0)
 		(effects
 			(font
 				(size 2.54 2.54)
 			)
 		)
 		(uuid "a701a630-d788-4f50-9f75-4718f7d95993")
+	)
+	(text "PSRAM\n"
+		(exclude_from_sim no)
+		(at 316.738 173.736 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "ac96edd9-dbbf-4cd8-8056-246ff4dde79a")
 	)
 	(text "Voltage Regulator"
 		(exclude_from_sim no)
@@ -5112,7 +5122,7 @@
 	)
 	(text "ESP-32"
 		(exclude_from_sim no)
-		(at 333.248 87.122 0)
+		(at 318.77 87.884 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -5159,6 +5169,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2f1cada0-2955-4367-a69e-a654af669051")
+	)
+	(junction
+		(at 304.8 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33ec0d50-9cf3-4f8f-a026-4369a7f00166")
 	)
 	(junction
 		(at 66.04 236.22)
@@ -5946,6 +5962,16 @@
 		)
 		(uuid "738057fb-dee3-4bb4-8074-cc1e32ccac1d")
 	)
+	(bus
+		(pts
+			(xy 304.8 234.95) (xy 419.1 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "753d70bd-ee17-4d8f-89b5-b274b4a9dc69")
+	)
 	(wire
 		(pts
 			(xy 73.66 55.88) (xy 73.66 58.42)
@@ -6375,6 +6401,16 @@
 			(type default)
 		)
 		(uuid "c3900f10-b465-48c5-9209-b468c71187ae")
+	)
+	(bus
+		(pts
+			(xy 304.8 167.64) (xy 304.8 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c55ecf11-767d-4a89-86c9-92e0ef27f7c6")
 	)
 	(wire
 		(pts
