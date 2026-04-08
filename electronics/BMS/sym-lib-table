@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "BQ25180YBGR")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/BQ25180YBGR.kicad_sym")(options "")(descr ""))
+  (lib (name "BQ29700DSER")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/BQ29700DSER.kicad_sym")(options "")(descr ""))
+  (lib (name "CSD16406Q3")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/CSD16406Q3.kicad_sym")(options "")(descr ""))
+  (lib (name "NCP15XH103F03RC")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/NCP15XH103F03RC.kicad_sym")(options "")(descr ""))
+  (lib (name "TPD2E2U06DCKR")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/TPD2E2U06DCKR.kicad_sym")(options "")(descr ""))
+  (lib (name "USB4105-GF-A")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/USB4105-GF-A.kicad_sym")(options "")(descr ""))
+)
