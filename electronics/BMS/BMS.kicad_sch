@@ -6931,7 +6931,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Footprints:HARWIN_S70-125161545R"
+		(property "Footprint" "Footprints:ENIG_PAD"
 			(at 231.14 149.86 0)
 			(effects
 				(font
@@ -9636,7 +9636,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Footprints:HARWIN_S70-125161545R"
+		(property "Footprint" "Footprints:ENIG_PAD"
 			(at 259.08 149.86 0)
 			(effects
 				(font
@@ -11447,7 +11447,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Footprints:HARWIN_S70-125161545R"
+		(property "Footprint" "Footprints:ENIG_PAD"
 			(at 176.53 149.86 0)
 			(effects
 				(font
@@ -11645,7 +11645,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Footprints:HARWIN_S70-125161545R"
+		(property "Footprint" "Footprints:ENIG_PAD"
 			(at 204.47 149.86 0)
 			(effects
 				(font

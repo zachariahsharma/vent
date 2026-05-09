@@ -5,6 +5,177 @@
 	(uuid "ea2bda2b-bb9a-4e5a-ab88-7882822440d3")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ESP32-C3-WROOM-02-N4:ESP32-C3-WROOM-02-N4"
 			(pin_names
 				(offset 1.016)
@@ -1146,7 +1317,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 91.44) (xy 262.89 91.44)
+			(xy 72.39 33.02) (xy 74.93 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1156,7 +1327,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 124.46) (xy 262.89 124.46)
+			(xy 72.39 66.04) (xy 74.93 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1166,7 +1337,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 262.89 91.44 270)
+		(at 74.93 33.02 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1175,7 +1346,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cef6703-1704-46e3-ab3f-4b9f93d775ca")
 		(property "Reference" "#PWR01"
-			(at 259.08 91.44 0)
+			(at 71.12 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1184,7 +1355,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 266.7 91.4399 90)
+			(at 78.74 33.0199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1193,7 +1364,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 91.44 0)
+			(at 74.93 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1202,7 +1373,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 91.44 0)
+			(at 74.93 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1211,7 +1382,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 262.89 91.44 0)
+			(at 74.93 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1233,7 +1404,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 262.89 124.46 90)
+		(at 74.93 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1242,7 +1413,7 @@
 		(fields_autoplaced yes)
 		(uuid "577b88ce-38b1-44d3-b068-0a5e972b17de")
 		(property "Reference" "#PWR02"
-			(at 269.24 124.46 0)
+			(at 81.28 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1251,7 +1422,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 266.7 124.4599 90)
+			(at 78.74 66.0399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1260,7 +1431,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 124.46 0)
+			(at 74.93 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1269,7 +1440,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 124.46 0)
+			(at 74.93 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1278,7 +1449,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 262.89 124.46 0)
+			(at 74.93 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1300,7 +1471,7 @@
 	)
 	(symbol
 		(lib_id "ESP32-C3-WROOM-02-N4:ESP32-C3-WROOM-02-N4")
-		(at 242.57 109.22 0)
+		(at 54.61 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1309,7 +1480,7 @@
 		(fields_autoplaced yes)
 		(uuid "973c1d6f-c9c4-499a-ac61-8996ee5e7303")
 		(property "Reference" "U1"
-			(at 242.57 83.82 0)
+			(at 54.61 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1317,15 +1488,15 @@
 			)
 		)
 		(property "Value" "ESP32-C3-WROOM-02-N4"
-			(at 242.57 86.36 0)
+			(at 54.61 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "ESP32-C3-WROOM-02-N4:MODULE_ESP32-C3-WROOM-02-H4"
-			(at 242.57 109.22 0)
+		(property "Footprint" "Footprints:MODULE_ESP32-C3-WROOM-02-H4"
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1335,7 +1506,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1344,7 +1515,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1353,7 +1524,7 @@
 			)
 		)
 		(property "MF" "Espressif Systems"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1363,7 +1534,7 @@
 			)
 		)
 		(property "DESCRIPTION" "WiFi Modules (802.11) (Engineering Samples) SMD module, ESP32-C3, 4MB SPI flash, PCB antenna, -40 C +105 C"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1373,7 +1544,7 @@
 			)
 		)
 		(property "PACKAGE" "Package"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1383,7 +1554,7 @@
 			)
 		)
 		(property "PRICE" "None"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1393,7 +1564,7 @@
 			)
 		)
 		(property "Package" "Package"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1403,7 +1574,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/ESP32-C3-WROOM-02-N4/Espressif+Systems/view-part/?ref=eda"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1413,7 +1584,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1423,7 +1594,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/ESP32-C3-WROOM-02-N4/Espressif+Systems/view-part/?ref=snap"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1433,7 +1604,7 @@
 			)
 		)
 		(property "MP" "ESP32-C3-WROOM-02-N4"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1443,7 +1614,7 @@
 			)
 		)
 		(property "Description_1" "WiFi Modules (802.11) (Engineering Samples) SMD module, ESP32-C3, 4MB SPI flash, PCB antenna, -40 C +85 C"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1453,7 +1624,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1463,7 +1634,7 @@
 			)
 		)
 		(property "AVAILABILITY" "In Stock"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1473,7 +1644,7 @@
 			)
 		)
 		(property "PURCHASE-URL" "https://pricing.snapeda.com/search/part/ESP32-C3-WROOM-02-H4/?ref=eda"
-			(at 242.57 109.22 0)
+			(at 54.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1603,6 +1774,79 @@
 			(project ""
 				(path "/ea2bda2b-bb9a-4e5a-ab88-7882822440d3"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 113.03 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c15e9fac-cb06-48b7-9bca-3e67e536d456")
+		(property "Reference" "J1"
+			(at 115.57 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 115.57 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical"
+			(at 113.03 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 113.03 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3bc0d065-5ae2-48db-bcb3-bfea9f50301d")
+		)
+		(pin "1"
+			(uuid "aac9ec05-019d-4e1f-a46c-de08000e06ae")
+		)
+		(pin "3"
+			(uuid "6263faf3-bc41-43a3-84c0-aa7f5092adea")
+		)
+		(instances
+			(project ""
+				(path "/ea2bda2b-bb9a-4e5a-ab88-7882822440d3"
+					(reference "J1")
 					(unit 1)
 				)
 			)

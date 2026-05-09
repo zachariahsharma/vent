@@ -19,5 +19,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - vynte_logo.png
     - solologo.tif.png
     - compoundlogo.png
