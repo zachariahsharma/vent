@@ -362,7 +362,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -22.86 -10.16 0)
 					(length 5.08)
 					(name "RXD"
@@ -741,7 +741,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x06_Pin"
+			(property "Value" "AUTO_PROG_UART"
 				(at 0 -10.16 0)
 				(effects
 					(font
@@ -2470,7 +2470,7 @@
 						)
 					)
 				)
-				(pin open_emitter line
+				(pin passive line
 					(at 2.54 -5.08 90)
 					(length 2.54)
 					(name "E"
@@ -3083,7 +3083,652 @@
 			)
 			(embedded_fonts no)
 		)
-	)
+	
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+
+		(symbol "TPD2E2U06DCKR:TPD2E2U06DCKR"
+		
+					(pin_names
+		
+						(offset 1.016)
+		
+					)
+		
+					(exclude_from_sim no)
+		
+					(in_bom yes)
+		
+					(on_board yes)
+		
+					(property "Reference" "U"
+		
+						(at -12.7 6.08 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify left bottom)
+		
+						)
+		
+					)
+		
+					(property "Value" "TPD2E2U06DCKR"
+		
+						(at -12.7 -7.62 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify left bottom)
+		
+						)
+		
+					)
+		
+					(property "Footprint" "TPD2E2U06DCKR:SOT65P210X110-3N"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "Datasheet" ""
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "Description" ""
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "MF" "Texas Instruments"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "SNAPEDA_PACKAGE_ID" "103259"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "CREATOR" "Amina"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "Price" "None"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "Package" "SC70-3 Texas Instruments"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "Check_prices" "https://www.snapeda.com/parts/TPD2E2U06DCKR/Texas+Instruments/view-part/?ref=eda"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "STANDARD" "IPC 7351B"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "PARTREV" "C"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "VERIFIER" "Your name, use the same always"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "SnapEDA_Link" "https://www.snapeda.com/parts/TPD2E2U06DCKR/Texas+Instruments/view-part/?ref=snap"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "MP" "TPD2E2U06DCKR"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "MAXIMUM_PACKAGE_HEIGHT" "1.1mm"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "Description_1" "Dual 1.5-pF, 5.5-V, ±25-kV  ESD protection diode with 5.5-A 8/20-uS surge rating  for USB 2.0"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "Availability" "In Stock"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(property "MANUFACTURER" "Texas Instruments"
+		
+						(at 0 0 0)
+		
+						(effects
+		
+							(font
+		
+								(size 1.27 1.27)
+		
+							)
+		
+							(justify bottom)
+		
+							(hide yes)
+		
+						)
+		
+					)
+		
+					(symbol "TPD2E2U06DCKR_0_0"
+		
+						(rectangle
+		
+							(start -12.7 -5.08)
+		
+							(end 12.7 5.08)
+		
+							(stroke
+		
+								(width 0.41)
+		
+								(type default)
+		
+							)
+		
+							(fill
+		
+								(type background)
+		
+							)
+		
+						)
+		
+						(pin bidirectional line
+		
+							(at 17.78 5.08 180)
+		
+							(length 5.08)
+		
+							(name "IO1"
+		
+								(effects
+		
+									(font
+		
+										(size 1.016 1.016)
+		
+									)
+		
+								)
+		
+							)
+		
+							(number "1"
+		
+								(effects
+		
+									(font
+		
+										(size 1.016 1.016)
+		
+									)
+		
+								)
+		
+							)
+		
+						)
+		
+						(pin bidirectional line
+		
+							(at 17.78 0 180)
+		
+							(length 5.08)
+		
+							(name "IO2"
+		
+								(effects
+		
+									(font
+		
+										(size 1.016 1.016)
+		
+									)
+		
+								)
+		
+							)
+		
+							(number "2"
+		
+								(effects
+		
+									(font
+		
+										(size 1.016 1.016)
+		
+									)
+		
+								)
+		
+							)
+		
+						)
+		
+						(pin power_in line
+		
+							(at 17.78 -5.08 180)
+		
+							(length 5.08)
+		
+							(name "GND"
+		
+								(effects
+		
+									(font
+		
+										(size 1.016 1.016)
+		
+									)
+		
+								)
+		
+							)
+		
+							(number "3"
+		
+								(effects
+		
+									(font
+		
+										(size 1.016 1.016)
+		
+									)
+		
+								)
+		
+							)
+		
+						)
+		
+					)
+		
+					(embedded_fonts no)
+		
+				))
 	(text "Connector Pins"
 		(exclude_from_sim no)
 		(at 158.75 65.532 0)
@@ -3618,16 +4263,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 82.55) (xy 148.59 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99cb3e08-1b53-43b0-80f7-a01caf9ae3af")
-	)
-	(wire
-		(pts
 			(xy 153.67 82.55) (xy 153.67 86.36)
 		)
 		(stroke
@@ -3705,18 +4340,7 @@
 			(type default)
 		)
 		(uuid "c5cd9190-bbf7-4b6c-97aa-6cec5b8b1d20")
-	)
-	(wire
-		(pts
-			(xy 165.1 86.36) (xy 165.1 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca0efb60-92c5-4cbc-9a1e-eed2d6a3c327")
-	)
-	(wire
+	)	(wire
 		(pts
 			(xy 86.36 82.55) (xy 86.36 86.36)
 		)
@@ -3923,7 +4547,7 @@
 		)
 	)
 	(global_label "TXD0"
-		(shape input)
+		(shape output)
 		(at 21.59 107.95 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3966,7 +4590,7 @@
 			)
 		)
 	)
-	(global_label "IO0"
+	(global_label "GND"
 		(shape input)
 		(at 151.13 82.55 90)
 		(fields_autoplaced yes)
@@ -4010,7 +4634,7 @@
 			)
 		)
 	)
-	(global_label "USB_D-"
+	(global_label "TXD0"
 		(shape input)
 		(at 156.21 82.55 90)
 		(fields_autoplaced yes)
@@ -4032,7 +4656,7 @@
 			)
 		)
 	)
-	(global_label "VBUS"
+	(global_label "EN"
 		(shape input)
 		(at 158.75 82.55 90)
 		(fields_autoplaced yes)
@@ -4120,7 +4744,7 @@
 			)
 		)
 	)
-	(global_label "USB_D+"
+	(global_label "RXD0"
 		(shape input)
 		(at 153.67 82.55 90)
 		(fields_autoplaced yes)
@@ -4318,27 +4942,21 @@
 			)
 		)
 	)
-	(global_label "EN"
-		(shape input)
+
+	(no_connect
+		(at 148.59 86.36)
+		(uuid "512ceda9-253b-4dc5-8f7f-cf82263c9a0a")
+	)
+	(text "+3V3_SENSE"
+		(exclude_from_sim no)
 		(at 148.59 82.55 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "f6ddc956-abe1-48d5-ae34-561201b69e67")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.59 77.0853 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "7dc972f5-7d45-4d29-8e2f-a2835af219d8")
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NPN,S8050 J3Y 200-350")
@@ -4612,7 +5230,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0805"
+		(property "Footprint" "PCM_JLCPCB:C_0805_4u7"
 			(at 88.392 78.74 90)
 			(effects
 				(font
@@ -4864,7 +5482,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x05_Pin"
+		(property "Value" "Conn_01x06_Pin"
 			(at 154.94 96.52 90)
 			(effects
 				(font
@@ -4872,7 +5490,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical"
 			(at 153.67 91.44 0)
 			(effects
 				(font
@@ -5551,7 +6169,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0805"
+		(property "Footprint" "PCM_JLCPCB:C_0805_100nF"
 			(at 79.502 78.74 90)
 			(effects
 				(font
@@ -5780,72 +6398,6 @@
 			(project "Autoprogramming"
 				(path "/f95adc32-34e9-48d0-adf5-65ed4f5b75a5"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 165.1 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a46e59a3-5395-4902-a3d9-646b6a23aa0d")
-		(property "Reference" "#PWR01"
-			(at 165.1 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 165.1 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f2587b9-f1b5-4502-bf81-12a6a258239f")
-		)
-		(instances
-			(project ""
-				(path "/f95adc32-34e9-48d0-adf5-65ed4f5b75a5"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -7174,6 +7726,474 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 72.39 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5ed958d4-fcd5-412b-ab94-93bce23317bb")
+		(property "Reference" "#FLG01"
+			(at 72.39 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 72.39 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae987ee8-cf85-4d7b-ba72-ea5994fc8657")
+		)
+		(instances
+			(project "Autoprogramming"
+				(path "/f95adc32-34e9-48d0-adf5-65ed4f5b75a5"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 73.66 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9fab5a4-c491-4a8e-8035-1f3eef7255f0")
+		(property "Reference" "#FLG02"
+			(at 73.66 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 73.66 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "148187bc-4ae8-419f-9c2e-2b17895a0520")
+		)
+		(instances
+			(project "Autoprogramming"
+				(path "/f95adc32-34e9-48d0-adf5-65ed4f5b75a5"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 71.12 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "cb44caea-11f8-4c35-ac77-e17cd85c6e43")
+		(property "Reference" "#FLG03"
+			(at 71.12 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 71.12 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc43dd67-7e86-4243-8e60-7e0ef4838378")
+		)
+		(instances
+			(project "Autoprogramming"
+				(path "/f95adc32-34e9-48d0-adf5-65ed4f5b75a5"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(global_label "IO0"
+		(shape input)
+		(at 165.1 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "75101b3a-e0e9-4b90-bf93-cee6a9d06d06")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.1 83.82 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(text "ESD / TVS Protection"
+		(exclude_from_sim no)
+		(at 99.06 15.24 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "34106534-17ff-4d93-a4dc-5972bfe3eb34")
+	)
+
+	(text "USB data TVS"
+		(exclude_from_sim no)
+		(at 100.33 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+		)
+		(uuid "4e36f22a-4d24-49ec-924f-93220d480c81")
+	)
+	(symbol
+		(lib_id "TPD2E2U06DCKR:TPD2E2U06DCKR")
+		(at 118.11 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ffa6d539-8dd1-4e7a-9203-5e896807458c")
+		(property "Reference" "U4"
+			(at 105.41 24.380000000000003 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom left)
+			)
+		)
+		(property "Value" "TPD2E2U06DCKR"
+			(at 105.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom left)
+			)
+		)
+		(property "Footprint" "Footprints:SOT65P210X110-3N"
+			(at 118.11 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+			(at 118.11 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1" (uuid "1d363375-ee61-4eff-b4bb-221b1bb1749e"))
+		(pin "2" (uuid "4fc46467-3d6e-44f1-8464-a1b1556878a7"))
+		(pin "3" (uuid "e8c62ea5-e73b-48ce-be82-104dfa018503"))
+		(instances
+			(project "Autoprogramming"
+				(path "/f95adc32-34e9-48d0-adf5-65ed4f5b75a5"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "USB_D+"
+		(shape input)
+		(at 135.89 25.4 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "4c3823c2-a823-463c-959d-2fa842a085ba")
+	)
+	(global_label "USB_D-"
+		(shape input)
+		(at 135.89 30.48 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "2a8a5687-8993-4a22-8cb0-5028396c431c")
+	)
+	(global_label "GND"
+		(shape input)
+		(at 135.89 35.56 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "b4997072-8eb6-4adb-b8f0-ef1eeaae6f62")
+	)
+
+	(text "UART TVS"
+		(exclude_from_sim no)
+		(at 100.33 43.18000000000001 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+		)
+		(uuid "4f5e8334-e700-4338-8fb5-8fcd197987b2")
+	)
+	(symbol
+		(lib_id "TPD2E2U06DCKR:TPD2E2U06DCKR")
+		(at 118.11 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1dabf20e-9421-427e-85bf-0d2dcee60c09")
+		(property "Reference" "U5"
+			(at 105.41 47.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom left)
+			)
+		)
+		(property "Value" "TPD2E2U06DCKR"
+			(at 105.41 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom left)
+			)
+		)
+		(property "Footprint" "Footprints:SOT65P210X110-3N"
+			(at 118.11 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+			(at 118.11 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1" (uuid "c32ebe35-f07a-4ec4-a704-afb16439dd52"))
+		(pin "2" (uuid "b633e67c-ce3f-4a3d-81e5-3e2aef551359"))
+		(pin "3" (uuid "e700ad66-d53d-4efa-9fc1-5838d680b36e"))
+		(instances
+			(project "Autoprogramming"
+				(path "/f95adc32-34e9-48d0-adf5-65ed4f5b75a5"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "RXD0"
+		(shape input)
+		(at 135.89 48.26 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "451df0b2-5275-4bd7-9c2f-c5ec810e6ca3")
+	)
+	(global_label "TXD0"
+		(shape input)
+		(at 135.89 53.34 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "b966107f-c64e-4bfd-9302-e644a2abdf89")
+	)
+	(global_label "GND"
+		(shape input)
+		(at 135.89 58.42 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "cd77517b-0eea-4b28-b392-03805a94f5c7")
+	)
+
+	(text "Reset / boot TVS"
+		(exclude_from_sim no)
+		(at 100.33 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+		)
+		(uuid "51eb956f-69c1-4edb-be00-3517c39facd5")
+	)
+	(symbol
+		(lib_id "TPD2E2U06DCKR:TPD2E2U06DCKR")
+		(at 118.11 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c907468c-810f-49dc-9e27-71993bcb3cba")
+		(property "Reference" "U6"
+			(at 105.41 70.10000000000001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom left)
+			)
+		)
+		(property "Value" "TPD2E2U06DCKR"
+			(at 105.41 83.82000000000001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom left)
+			)
+		)
+		(property "Footprint" "Footprints:SOT65P210X110-3N"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1" (uuid "bfb7b12a-022e-42c1-ae0b-ee7f62e24861"))
+		(pin "2" (uuid "1d68910f-41ed-4014-9382-863457f7c478"))
+		(pin "3" (uuid "30f9ef5e-1b68-4648-a5c6-cea60e388253"))
+		(instances
+			(project "Autoprogramming"
+				(path "/f95adc32-34e9-48d0-adf5-65ed4f5b75a5"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "EN"
+		(shape input)
+		(at 135.89 71.12 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "21331de3-f1bb-40fe-9d84-5c70bb90d433")
+	)
+	(global_label "IO0"
+		(shape input)
+		(at 135.89 76.2 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "f9e39409-d7ea-4246-9e7f-c4ac9504aeb8")
+	)
+	(global_label "GND"
+		(shape input)
+		(at 135.89 81.28 0)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "fbca08d2-a062-490c-861b-95fa1d68124b")
+	)
+
 	(sheet_instances
 		(path "/"
 			(page "1")

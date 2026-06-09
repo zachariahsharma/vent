@@ -108,4 +108,16 @@
       )
     )
   )
+
+  (model "${KIPRJMOD}/Comps/Model/ESP32-C3-WROOM-02-N4.step"
+    (offset
+    (xyz 0 0 0)
+    )
+    (scale
+    (xyz 1 1 1)
+    )
+    (rotate
+    (xyz 0 0 0)
+    )
+  )
 )

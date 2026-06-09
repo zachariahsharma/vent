@@ -32,4 +32,16 @@
   (fp_circle (center -2.2 -1.54) (end -2.16 -1.54) (layer F.SilkS) (width 0.05))
   (fp_circle (center -2.23 -1.57) (end -2.1939469 -1.57) (layer F.SilkS) (width 0.05))
   (fp_circle (center -2.21 -1.55) (end -2.031956 -1.55) (layer F.SilkS) (width 0.05))
+
+  (model "${KIPRJMOD}/Comps/Models/MCP9808T-E_MS.step"
+    (offset
+    (xyz 0 0 0)
+    )
+    (scale
+    (xyz 1 1 1)
+    )
+    (rotate
+    (xyz 0 0 0)
+    )
+  )
 )

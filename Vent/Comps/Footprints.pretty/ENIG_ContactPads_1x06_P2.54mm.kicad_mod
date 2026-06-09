@@ -1,0 +1,82 @@
+(footprint "ENIG_ContactPads_1x06_P2.54mm"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "Six exposed top-side SMD contact pads intended for ENIG-finished board-to-board contact or pogo interaction")
+  (tags "ENIG contact pads pogo exposed")
+
+  (property "Reference" "REF**" (at 6.35 -3 0)
+    (layer "F.SilkS")
+    (uuid "28326b53-8132-4fa1-9fc5-fb087f92834d")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "ENIG_ContactPads_1x06_P2.54mm" (at 6.35 3 0)
+    (layer "F.Fab")
+    (uuid "e06da7e7-6eea-41c5-8262-c404252c5490")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "f0ab5008-9b39-4fbd-975f-80fa87fd400e")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -1.25 -1.75)
+    (end 13.95 1.75)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "35143ded-6de1-45a2-94a1-9c5ed15167b3")
+  )
+
+  (pad "1" smd roundrect
+    (at 0 0)
+    (size 2 3)
+    (layers "F.Cu" "F.Mask")
+    (roundrect_rratio 0.2)
+    (uuid "1247d9f4-a0ff-4dba-baeb-7a476169bd93")
+  )
+
+  (pad "2" smd roundrect
+    (at 2.54 0)
+    (size 2 3)
+    (layers "F.Cu" "F.Mask")
+    (roundrect_rratio 0.2)
+    (uuid "7444b829-4df8-47b3-8789-fda3b26de7d3")
+  )
+
+  (pad "3" smd roundrect
+    (at 5.08 0)
+    (size 2 3)
+    (layers "F.Cu" "F.Mask")
+    (roundrect_rratio 0.2)
+    (uuid "53b20e45-54ab-41b1-9b2f-9c886faadc48")
+  )
+
+  (pad "4" smd roundrect
+    (at 7.62 0)
+    (size 2 3)
+    (layers "F.Cu" "F.Mask")
+    (roundrect_rratio 0.2)
+    (uuid "b3e5abfa-e8e3-4b68-849e-0557ea38e69d")
+  )
+
+  (pad "5" smd roundrect
+    (at 10.16 0)
+    (size 2 3)
+    (layers "F.Cu" "F.Mask")
+    (roundrect_rratio 0.2)
+    (uuid "31db0b35-8c3a-451d-9f12-a5fb45bbab4d")
+  )
+
+  (pad "6" smd roundrect
+    (at 12.7 0)
+    (size 2 3)
+    (layers "F.Cu" "F.Mask")
+    (roundrect_rratio 0.2)
+    (uuid "fca98f7a-4ef9-4524-9c51-ec3be78357a8")
+  )
+
+)

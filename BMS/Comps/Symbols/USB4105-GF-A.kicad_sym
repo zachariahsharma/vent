@@ -147,7 +147,7 @@
         )
       )
       (pin power_in line (at 20.32 -10.16 180.0) (length 5.08)
-        (name "SHELL_GND"
+        (name "GND"
           (effects (font (size 1.016 1.016)))
         )
         (number "SH1"
@@ -155,7 +155,7 @@
         )
       )
       (pin power_in line (at 20.32 -10.16 180.0) (length 5.08) hide
-        (name "SHELL_GND"
+        (name "GND"
           (effects (font (size 1.016 1.016)))
         )
         (number "SH2"
@@ -163,7 +163,7 @@
         )
       )
       (pin power_in line (at 20.32 -10.16 180.0) (length 5.08) hide
-        (name "SHELL_GND"
+        (name "GND"
           (effects (font (size 1.016 1.016)))
         )
         (number "SH3"
@@ -171,7 +171,7 @@
         )
       )
       (pin power_in line (at 20.32 -10.16 180.0) (length 5.08) hide
-        (name "SHELL_GND"
+        (name "GND"
           (effects (font (size 1.016 1.016)))
         )
         (number "SH4"

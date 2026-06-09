@@ -4,4 +4,7 @@
   (lib (name "TYPE-C-31-M-12")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/TYPE-C-31-M-12.kicad_sym")(options "")(descr ""))
   (lib (name "AP2112K-3.3TRG1")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/AP2112K-3.3TRG1.kicad_sym")(options "")(descr ""))
   (lib (name "CP2102N-A02-GQFN28R")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/CP2102N-A02-GQFN28R.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32-C6-MINI-1")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/ESP32-C6-MINI-1.kicad_sym")(options "")(descr "ESP32-C6 Wi-Fi + 802.15.4 Thread module"))
+  (lib (name "PCM_JLCPCB-Capacitors")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/PCM_JLCPCB-Capacitors.kicad_sym")(options "")(descr "Project-local passive capacitor aliases"))
+  (lib (name "PCM_JLCPCB-Resistors")(type "KiCad")(uri "${KIPRJMOD}/Comps/Symbols/PCM_JLCPCB-Resistors.kicad_sym")(options "")(descr "Project-local passive resistor aliases"))
 )

@@ -141,4 +141,16 @@
       (xy 2.05 -4.13)
     ) (layer F.Mask) (width 0.01)
   )
+
+  (model "${KIPRJMOD}/Comps/Models/TYPE-C-31-M-12.step"
+    (offset
+    (xyz 0 0 0)
+    )
+    (scale
+    (xyz 1 1 1)
+    )
+    (rotate
+    (xyz 0 0 0)
+    )
+  )
 )

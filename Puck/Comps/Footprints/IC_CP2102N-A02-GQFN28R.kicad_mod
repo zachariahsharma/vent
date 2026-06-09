@@ -5880,4 +5880,16 @@
       (xy -1.05936 1.05936)
     ) (layer F.Paste) (width 0.01)
   )
+
+  (model "${KIPRJMOD}/Comps/Models/CP2102N-A02-GQFN28R.step"
+    (offset
+    (xyz 0 0 0)
+    )
+    (scale
+    (xyz 1 1 1)
+    )
+    (rotate
+    (xyz 0 0 0)
+    )
+  )
 )
