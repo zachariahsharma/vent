@@ -82,6 +82,10 @@ The following revisions are recommended from a full datasheet review and must be
 
 2. **C_VDD_HF: 100nF X7R 0402 within 2mm of ESP32-H2 VDD33 (pad 3) on PCB** — The module already has internal decoupling, but Espressif's reference design recommends an external high-frequency bypass at the package edge to suppress radio-band noise. Add a 100nF cap symbol in the schematic from +3V3 to GND, then place the footprint within 2mm of pad 3 on the PCB.
 
+## Pending Schematic Re-layout
+
+A full schematic re-layout for readability is pending. Two scripted/agent-driven attempts failed (the second corrupted the schematic and required restoration from `Vent.kicad_sch.bak-before-reorg`). The proper next step is manual re-layout in KiCad's schematic editor — automated S-expression rewrites are too fragile for visual layout work. Target grouping: U1+decoupling at top-left, U2 buck section at top-right, J1/J3 servo connectors at bottom, J2 programming header isolated on the right.
+
 ## Pending PCB Routing
 
 - **SERVO_PWM (U1.24 → J1.3)**: 1 unconnected net. Manual interactive routing required — scripted attempts collide with the ESP_BOOT wall at x=22.165, the +3V3 vertical at x=31.057, BB_SW2 vias, and the BMS_SYS_CONTACT diagonal. Suggested approach: short F.Cu stub east of pad 24, via at ~(24, 13.5), B.Cu through the corridor between U1 internal pads and the buck section, then F.Cu down to J1.3.

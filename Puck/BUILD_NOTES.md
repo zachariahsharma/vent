@@ -19,6 +19,10 @@ The following revisions are recommended from a full datasheet review and must be
 
 2. **C_ESP_VDD33_HF: 100nF X7R 0402 within 2mm of ESP32-S3-WROOM-1 VDD33 (pad 3) on PCB** — Espressif's reference design (ESP32-S3-WROOM-1 datasheet rev 1.4) recommends an external high-frequency bypass at the package edge to suppress radio-band noise on the 3.3V rail. Add a 100nF cap symbol from +3V3 to GND in the schematic, then place the footprint within 2mm of pad 3 on the PCB.
 
+## Pending Schematic Re-layout
+
+A full schematic re-layout for readability is pending. Scripted/agent-driven attempts proved unreliable on the sibling Vent project. The proper next step is manual re-layout in KiCad's schematic editor. Target grouping: ESP32-S3-WROOM-1 module with its decoupling caps top-center, MCP9808 with its bypass cap as an isolated cluster, headers/connectors at the bottom.
+
 ## Pending PCB Routing
 
 No outstanding routing issues at this time. Latest DRC clean per `Puck-drc.rpt`.
