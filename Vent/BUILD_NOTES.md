@@ -73,3 +73,17 @@ Current PCB checks:
 ## Manufacturing Gate
 
 The Vent PCB is acceptable to send to PCB fabrication and PCBA as this controller/contact board revision, provided the external boost module/harness above is part of the assembly plan.
+
+## Pending Schematic Revisions (Datasheet Review)
+
+The following revisions are recommended from a full datasheet review and must be applied in the KiCad GUI (scripted .kicad_sch edits proved fragile in prior attempts):
+
+1. **R_PD1: 10kΩ pull-down on SERVO_BOOST_EN** — IO25 is an ESP32-H2 strapping pin; an external pull-down ensures the boost converter stays disabled during boot until firmware drives it. Place close to U1 pad 25 in the schematic, connect SERVO_BOOST_EN → GND.
+
+2. **C_VDD_HF: 100nF X7R 0402 within 2mm of ESP32-H2 VDD33 (pad 3) on PCB** — The module already has internal decoupling, but Espressif's reference design recommends an external high-frequency bypass at the package edge to suppress radio-band noise. Add a 100nF cap symbol in the schematic from +3V3 to GND, then place the footprint within 2mm of pad 3 on the PCB.
+
+## Pending PCB Routing
+
+- **SERVO_PWM (U1.24 → J1.3)**: 1 unconnected net. Manual interactive routing required — scripted attempts collide with the ESP_BOOT wall at x=22.165, the +3V3 vertical at x=31.057, BB_SW2 vias, and the BMS_SYS_CONTACT diagonal. Suggested approach: short F.Cu stub east of pad 24, via at ~(24, 13.5), B.Cu through the corridor between U1 internal pads and the buck section, then F.Cu down to J1.3.
+
+- **BB_SW1/SW2 and BMS_SYS_CONTACT widening**: These nets remain at 0.20mm because uniform widening triggers clearance violations against neighboring pads in the U2/L1 buck section. To widen safely, the entire buck-converter region needs a local re-route, or apply a local netclass with reduced clearance (0.15mm) for buck-internal nets only.
