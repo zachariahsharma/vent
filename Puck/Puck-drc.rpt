@@ -1,0 +1,14 @@
+** Drc report for Puck.kicad_pcb **
+** Created on 2026-06-10T13:52:36-0600 **
+
+** Found 0 DRC violations **
+
+** Found 1 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(153.7500 mm, 96.2500 mm): Pad A7 [USB_D-] of J1 on F.Cu
+    @(153.7500 mm, 97.2500 mm): Pad B7 [USB_D-] of J1 on F.Cu
+
+** Found 0 Footprint errors **
+
+** End of Report **

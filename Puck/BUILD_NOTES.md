@@ -25,4 +25,22 @@ A full schematic re-layout for readability is pending. Scripted/agent-driven att
 
 ## Pending PCB Routing
 
-No outstanding routing issues at this time. Latest DRC clean per `Puck-drc.rpt`.
+One outstanding unconnected item: **USB_D- A7 ↔ B7 on J1 (USB-C receptacle).**
+
+The USB-C connector exposes D- on both pads A7 and B7 to support cable-orientation independence. They must be electrically tied together. Scripted attempts to route this connection failed against the board's DRC constraints:
+
+- USB-C SMT receptacle pad pitch on A6/A7/B6/B7 row is 0.5mm in Y.
+- The board minimum via OD is 0.5mm with a 0.3mm drill (per `Puck.kicad_pro`), and default copper clearance is 0.15mm with 0.25mm hole clearance.
+- Any via dropped between A7 and the adjacent A6/B6 pads to reach the B.Cu D- net therefore violates clearance and hole-clearance rules. Routing on a single layer between A7 and B7 directly crosses the A6/B6 pads.
+
+This is a geometric/design-rule incompatibility that needs human judgment to resolve in the KiCad GUI. Possible resolutions (pick whichever fits the layout):
+
+1. Add a DRU exception scoped to J1.A6, J1.A7, J1.B6, J1.B7 lowering clearance/hole_clearance enough to drop a 0.5mm via on or beside A7 — keep this limited to the connector pads only.
+2. Route a B.Cu trace from B7 escape eastward, looping outside the connector pad bbox to reach the existing D- net under A7, instead of dropping a via inside the pad row.
+3. Use via-in-pad with tented/filled vias (requires fab capability declaration and ECO on stackup).
+
+All other Puck DRC items are clean (0 violations). Latest DRC report: `Puck-drc.rpt`.
+
+## Applied PCB Fixes
+
+- **B.Cu GND zone stitching (5 vias)** — The B.Cu GND zone was electrically isolated from the F.Cu GND network and from two GND pads (U1.11, U1.52). Five vias were added to bridge: one southern stitching via at (140.05, 92.20), two at U1.11/U1.52 pads (137.35, 84.50) and (137.30, 85.45), and two inside the U1.49 thermal pad row at (141.275, 80.50) and (143.250, 80.50). Resolved 3 unconnected GND items.
