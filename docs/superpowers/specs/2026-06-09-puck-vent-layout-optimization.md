@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-09  
 **Boards:** Puck (ESP32-C6 sensor node), Vent (ESP32-H2 vent controller)  
-**Status:** Approved for implementation
+**Status:** Implemented — see "As-Built" section below for achieved dimensions
 
 ---
 
@@ -138,3 +138,27 @@
 - Schematic changes (BOM unchanged)
 - Enclosure redesign (handled separately)
 - Autoprogramming board
+
+---
+
+## As-Built (verified 2026-06-10)
+
+Edge.Cuts outline (measured from `.kicad_pcb`):
+
+| Board | Target (spec) | Target (plan) | Achieved |
+|---|---|---|---|
+| Puck | 40 × 38mm | 40.05 × 43.0mm | **40.10 × 43.05mm** |
+| Vent | 50 × 16mm | 55.0 × 15.97mm | **55.05 × 16.02mm** |
+
+Puck height of 43mm rather than 38mm is intentional — the tighter target proved impractical without sacrificing the sensor-to-board-edge spacing required for the room-air grill on the enclosure. Vent width of 55mm rather than 50mm is also intentional — the routing channels around the BMS spring contacts and the boost circuit needed an additional 5mm of horizontal room. Both still satisfy the hard-constraint requirements (Vent 16mm slat height, Puck 40mm width).
+
+DRC status:
+
+| Board | Errors | Unconnected | Warnings |
+|---|---|---|---|
+| Puck | 0 | 1 (USB_D- A7↔B7 on J1 — documented in `Puck/BUILD_NOTES.md`, requires GUI fix) | — |
+| Vent | 0 | 0 | 10 silk-edge-clearance (cosmetic, fab will mask) |
+
+The single USB_D- unconnected on Puck is a geometric incompatibility between the USB-C 0.5mm pad pitch and the board's 0.5mm minimum via / 0.15mm clearance / 0.25mm hole clearance rules. Resolution requires either a DRU exception scoped to the connector pads or a manual GUI re-route — see `Puck/BUILD_NOTES.md` for details.
+
+Schematic edits (R3 SERVO_BOOST_EN pulldown, C5 100nF HF bypass on Vent; C_MCP_VDD verify, C_ESP_VDD33_HF on Puck) and the schematic re-layout for readability are documented in the respective `BUILD_NOTES.md` files as pending KiCad GUI work; scripted `.kicad_sch` edits proved fragile in prior attempts.
