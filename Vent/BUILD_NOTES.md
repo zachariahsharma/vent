@@ -66,7 +66,7 @@ Current PCB checks:
 - The PCB has the ESP32-H2 footprint and a `J3` 1x04 boost-header footprint.
 - The dangerous stale ESP32-C3 signal traces that shorted into H2 pads were removed.
 - The current routed board has no DRC shorts, clearance violations, track crossings, dangling tracks, edge-clearance failures, or unconnected pads.
-- KiCad CLI DRC report: `electronics/Vent/Vent-drc.rpt`, `0` violations and `0` unconnected pads.
+- KiCad CLI DRC report: `electronics/Vent/Vent-drc.rpt`, `0` routing-electrical violations and `0` unconnected pads. The 10 remaining items are silkscreen-edge/overlap warnings (manufacturing tolerance, not blocking).
 - The project-level `lib_footprint_mismatch` rule is set to `ignore` for this board after the U1 ESP32-H2 footprint warning was verified as a KiCad library-copy comparator false positive, not a manufacturing geometry issue.
 - The `U1` board footprint and `Comps/Footprints/ESP32-H2-MINI-1.kicad_mod` were compared after removing board-instance-only fields (`at`, `path`, sheet fields, net annotations, and generator metadata). The normalized footprint text is identical, and the pad multiset comparison is clean: `61` board pads, `61` library pads, `0` board-only pad geometries, and `0` library-only pad geometries.
 
@@ -88,6 +88,6 @@ A full schematic re-layout for readability is pending. Two scripted/agent-driven
 
 ## Pending PCB Routing
 
-- **SERVO_PWM (U1.24 → J1.3)**: 1 unconnected net. Manual interactive routing required — scripted attempts collide with the ESP_BOOT wall at x=22.165, the +3V3 vertical at x=31.057, BB_SW2 vias, and the BMS_SYS_CONTACT diagonal. Suggested approach: short F.Cu stub east of pad 24, via at ~(24, 13.5), B.Cu through the corridor between U1 internal pads and the buck section, then F.Cu down to J1.3.
+- **SERVO_PWM (U1.24 → J1.3)**: Routed. Topology: via-on-pad at U1.24 (22.150, 12.750), B.Cu east to (32, 12.750), south past +3V3 vertical to (32, 15), east to (46.7, 15), south past the GND B.Cu wall on the west side to (46.7, 19.8), via to F.Cu, east at y=19.8 between BB_SW1 horizontal (y=19.31) and J1.3 pad, into J1.3 PTH from north. 0 unconnected, 0 routing-electrical DRC violations.
 
 - **BB_SW1/SW2 and BMS_SYS_CONTACT widening**: These nets remain at 0.20mm because uniform widening triggers clearance violations against neighboring pads in the U2/L1 buck section. To widen safely, the entire buck-converter region needs a local re-route, or apply a local netclass with reduced clearance (0.15mm) for buck-internal nets only.

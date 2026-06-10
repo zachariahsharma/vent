@@ -1,0 +1,297 @@
+** Drc report for Vent.kicad_pcb **
+** Created on 2026-06-10T12:33:10-0600 **
+
+** Found 10 DRC violations **
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(11.4500 mm, 11.9500 mm): Segment on Edge.Cuts
+    @(20.1500 mm, 12.4000 mm): Segment of U1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(11.4500 mm, 11.9500 mm): Segment on Edge.Cuts
+    @(20.3500 mm, 28.4000 mm): Segment of U1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(11.4500 mm, 11.9500 mm): Segment on Edge.Cuts
+    @(33.5500 mm, 11.8000 mm): Segment of U1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(11.4500 mm, 11.9500 mm): Segment on Edge.Cuts
+    @(33.7500 mm, 12.4000 mm): Segment of U1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(11.4500 mm, 11.9500 mm): Segment on Edge.Cuts
+    @(18.5000 mm, 11.7700 mm): Reference field of R2
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(11.4500 mm, 27.9200 mm): Segment on Edge.Cuts
+    @(11.5700 mm, 15.8000 mm): Reference field of C2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(16.7200 mm, 17.5550 mm): Reference field of J2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(13.5000 mm, 14.9000 mm): Reference field of R1
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(37.4500 mm, 18.3200 mm): Reference field of C3
+    @(38.8100 mm, 17.8850 mm): Segment of U2 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(46.2700 mm, 22.1200 mm): Segment of J3 on F.Silkscreen
+    @(51.2000 mm, 21.7000 mm): Reference field of J1
+
+** Found 0 unconnected pads **
+
+** Found 83 Footprint errors **
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3).
+    Local override; warning
+    @(17.0500 mm, 16.5000 mm): Pad 1 [+3V3] of C1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(18.9500 mm, 16.5000 mm): Pad 2 [GND] of C1 on F.Cu
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3).
+    Local override; warning
+    @(13.0000 mm, 16.5750 mm): Pad 1 [+3V3] of C2 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(13.0000 mm, 15.0250 mm): Pad 2 [GND] of C2 on F.Cu
+[net_conflict]: Pad net (BMS_SYS_CONTACT) doesn't match net given by schematic (/BMS_SYS_CONTACT).
+    Local override; warning
+    @(36.5000 mm, 20.0000 mm): Pad 1 [BMS_SYS_CONTACT] of C3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(38.4000 mm, 20.0000 mm): Pad 2 [GND] of C3 on F.Cu
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3).
+    Local override; warning
+    @(40.5500 mm, 20.0000 mm): Pad 1 [+3V3] of C4 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(42.4500 mm, 20.0000 mm): Pad 2 [GND] of C4 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(48.5000 mm, 15.5000 mm): PTH pad 1 [GND] of J1
+[net_conflict]: Pad net (+5V_SERVO) doesn't match net given by schematic (/+5V_SERVO).
+    Local override; warning
+    @(48.5000 mm, 18.0400 mm): PTH pad 2 [+5V_SERVO] of J1
+[net_conflict]: Pad net (SERVO_PWM) doesn't match net given by schematic (/SERVO_PWM).
+    Local override; warning
+    @(48.5000 mm, 20.5800 mm): PTH pad 3 [SERVO_PWM] of J1
+[footprint_symbol_mismatch]: Value (J2) doesn't match symbol value (AUTO_PROG_TESTPADS).
+    Local override; warning
+    @(15.4500 mm, 19.9350 mm): Footprint J2
+[footprint_symbol_mismatch]: PinHeader_2x03_P2.54mm_Vertical doesn't match footprint given by symbol (Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical).
+    Local override; warning
+    @(15.4500 mm, 19.9350 mm): Footprint J2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3).
+    Local override; warning
+    @(15.4500 mm, 19.9350 mm): PTH pad 1 [+3V3] of J2
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(17.9900 mm, 19.9350 mm): PTH pad 2 [GND] of J2
+[net_conflict]: Pad net (ESP_RXD) doesn't match net given by schematic (/ESP_RXD).
+    Local override; warning
+    @(15.4500 mm, 22.4750 mm): PTH pad 3 [ESP_RXD] of J2
+[net_conflict]: Pad net (ESP_TXD) doesn't match net given by schematic (/ESP_TXD).
+    Local override; warning
+    @(17.9900 mm, 22.4750 mm): PTH pad 4 [ESP_TXD] of J2
+[net_conflict]: Pad net (ESP_EN) doesn't match net given by schematic (/ESP_EN).
+    Local override; warning
+    @(15.4500 mm, 25.0150 mm): PTH pad 5 [ESP_EN] of J2
+[net_conflict]: Pad net (ESP_BOOT) doesn't match net given by schematic (/ESP_BOOT).
+    Local override; warning
+    @(17.9900 mm, 25.0150 mm): PTH pad 6 [ESP_BOOT] of J2
+[net_conflict]: Pad net (SERVO_BOOST_EN) doesn't match net given by schematic (/SERVO_BOOST_EN).
+    Local override; warning
+    @(45.0000 mm, 23.5000 mm): PTH pad 1 [SERVO_BOOST_EN] of J3
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(47.5400 mm, 23.5000 mm): PTH pad 2 [GND] of J3
+[net_conflict]: Pad net (BMS_SYS_CONTACT) doesn't match net given by schematic (/BMS_SYS_CONTACT).
+    Local override; warning
+    @(50.0800 mm, 23.5000 mm): PTH pad 3 [BMS_SYS_CONTACT] of J3
+[net_conflict]: Pad net (+5V_SERVO) doesn't match net given by schematic (/+5V_SERVO).
+    Local override; warning
+    @(52.6200 mm, 23.5000 mm): PTH pad 4 [+5V_SERVO] of J3
+[net_conflict]: Pad net (BMS_SYS_CONTACT) doesn't match net given by schematic (/BMS_SYS_CONTACT).
+    Local override; warning
+    @(52.8500 mm, 26.7700 mm): Pad 1 [BMS_SYS_CONTACT] of J4 on F.Cu
+[net_conflict]: Pad net (BMS_SYS_CONTACT) doesn't match net given by schematic (/BMS_SYS_CONTACT).
+    Local override; warning
+    @(56.8500 mm, 26.7700 mm): Pad 2 [BMS_SYS_CONTACT] of J4 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(60.8500 mm, 26.7700 mm): Pad 3 [GND] of J4 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(64.8500 mm, 26.7700 mm): Pad 4 [GND] of J4 on F.Cu
+[net_conflict]: Pad net (BB_SW1) doesn't match net given by schematic (/BB_SW1).
+    Local override; warning
+    @(40.4250 mm, 16.5000 mm): Pad 1 [BB_SW1] of L1 on F.Cu
+[net_conflict]: Pad net (BB_SW2) doesn't match net given by schematic (/BB_SW2).
+    Local override; warning
+    @(42.5750 mm, 16.5000 mm): Pad 2 [BB_SW2] of L1 on F.Cu
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3).
+    Local override; warning
+    @(12.6750 mm, 13.2000 mm): Pad 1 [+3V3] of R1 on F.Cu
+[net_conflict]: Pad net (ESP_EN) doesn't match net given by schematic (/ESP_EN).
+    Local override; warning
+    @(14.3250 mm, 13.2000 mm): Pad 2 [ESP_EN] of R1 on F.Cu
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3).
+    Local override; warning
+    @(17.6750 mm, 13.2000 mm): Pad 1 [+3V3] of R2 on F.Cu
+[net_conflict]: Pad net (ESP_BOOT) doesn't match net given by schematic (/ESP_BOOT).
+    Local override; warning
+    @(19.3250 mm, 13.2000 mm): Pad 2 [ESP_BOOT] of R2 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(32.8500 mm, 21.4000 mm): Pad 1 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(32.8500 mm, 20.6000 mm): Pad 2 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3).
+    Local override; warning
+    @(32.8500 mm, 19.8000 mm): Pad 3 [+3V3] of U1 on F.Cu
+[net_conflict]: Pad net (ESP_EN) doesn't match net given by schematic (/ESP_EN).
+    Local override; warning
+    @(32.8500 mm, 15.8000 mm): Pad 8 [ESP_EN] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(32.8500 mm, 13.4000 mm): Pad 11 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(30.1500 mm, 12.5000 mm): Pad 14 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3).
+    Local override; warning
+    @(29.3500 mm, 12.5000 mm): Pad 15 [+3V3] of U1 on F.Cu
+[net_conflict]: Pad net (ESP_BOOT) doesn't match net given by schematic (/ESP_BOOT).
+    Local override; warning
+    @(22.9500 mm, 12.5000 mm): Pad 23 [ESP_BOOT] of U1 on F.Cu
+[net_conflict]: Pad net (SERVO_PWM) doesn't match net given by schematic (/SERVO_PWM).
+    Local override; warning
+    @(22.1500 mm, 12.5000 mm): Pad 24 [SERVO_PWM] of U1 on F.Cu
+[net_conflict]: Pad net (SERVO_BOOST_EN) doesn't match net given by schematic (/SERVO_BOOST_EN).
+    Local override; warning
+    @(21.0500 mm, 13.4000 mm): Pad 25 [SERVO_BOOST_EN] of U1 on F.Cu
+[net_conflict]: Pad net (ESP_RXD) doesn't match net given by schematic (/ESP_RXD).
+    Local override; warning
+    @(21.0500 mm, 17.4000 mm): Pad 30 [ESP_RXD] of U1 on F.Cu
+[net_conflict]: Pad net (ESP_TXD) doesn't match net given by schematic (/ESP_TXD).
+    Local override; warning
+    @(21.0500 mm, 18.2000 mm): Pad 31 [ESP_TXD] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(22.1500 mm, 22.3000 mm): Pad 36 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(22.9500 mm, 22.3000 mm): Pad 37 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(23.7500 mm, 22.3000 mm): Pad 38 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(24.5500 mm, 22.3000 mm): Pad 39 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(25.3500 mm, 22.3000 mm): Pad 40 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(26.1500 mm, 22.3000 mm): Pad 41 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(26.9500 mm, 22.3000 mm): Pad 42 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(27.7500 mm, 22.3000 mm): Pad 43 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(28.5500 mm, 22.3000 mm): Pad 44 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(29.3500 mm, 22.3000 mm): Pad 45 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(30.1500 mm, 22.3000 mm): Pad 46 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(30.9500 mm, 22.3000 mm): Pad 47 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(31.7500 mm, 22.3000 mm): Pad 48 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(28.9250 mm, 19.3750 mm): Pad 49 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(28.9250 mm, 17.4000 mm): Pad 49 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(28.9250 mm, 15.4250 mm): Pad 49 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(26.9500 mm, 19.3750 mm): Pad 49 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(26.9500 mm, 17.4000 mm): Pad 49 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(26.9500 mm, 15.4250 mm): Pad 49 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(24.9750 mm, 19.3750 mm): Pad 49 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(24.9750 mm, 17.4000 mm): Pad 49 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(24.9750 mm, 15.4250 mm): Pad 49 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(21.0000 mm, 22.3500 mm): Pad 50 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(21.0000 mm, 12.4500 mm): Pad 51 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(32.9000 mm, 12.4500 mm): Pad 52 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(32.9000 mm, 22.3500 mm): Pad 53 [GND] of U1 on F.Cu
+[footprint_symbol_mismatch]: Value (U2) doesn't match symbol value (TPS63031DSK).
+    Local override; warning
+    @(37.4500 mm, 16.5000 mm): Footprint U2
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3).
+    Local override; warning
+    @(36.2375 mm, 15.5000 mm): Pad 1 [+3V3] of U2 on F.Cu
+[net_conflict]: Pad net (BB_SW2) doesn't match net given by schematic (/BB_SW2).
+    Local override; warning
+    @(36.2375 mm, 16.0000 mm): Pad 2 [BB_SW2] of U2 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(36.2375 mm, 16.5000 mm): Pad 3 [GND] of U2 on F.Cu
+[net_conflict]: Pad net (BB_SW1) doesn't match net given by schematic (/BB_SW1).
+    Local override; warning
+    @(36.2375 mm, 17.0000 mm): Pad 4 [BB_SW1] of U2 on F.Cu
+[net_conflict]: Pad net (BMS_SYS_CONTACT) doesn't match net given by schematic (/BMS_SYS_CONTACT).
+    Local override; warning
+    @(36.2375 mm, 17.5000 mm): Pad 5 [BMS_SYS_CONTACT] of U2 on F.Cu
+[net_conflict]: Pad net (BMS_SYS_CONTACT) doesn't match net given by schematic (/BMS_SYS_CONTACT).
+    Local override; warning
+    @(38.6625 mm, 17.5000 mm): Pad 6 [BMS_SYS_CONTACT] of U2 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(38.6625 mm, 17.0000 mm): Pad 7 [GND] of U2 on F.Cu
+[net_conflict]: Pad net (BMS_SYS_CONTACT) doesn't match net given by schematic (/BMS_SYS_CONTACT).
+    Local override; warning
+    @(38.6625 mm, 16.5000 mm): Pad 8 [BMS_SYS_CONTACT] of U2 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(38.6625 mm, 16.0000 mm): Pad 9 [GND] of U2 on F.Cu
+[net_conflict]: Pad net (+3V3) doesn't match net given by schematic (/+3V3).
+    Local override; warning
+    @(38.6625 mm, 15.5000 mm): Pad 10 [+3V3] of U2 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND).
+    Local override; warning
+    @(37.4500 mm, 16.5000 mm): Pad 11 [GND] of U2 on F.Cu
+
+** End of Report **
