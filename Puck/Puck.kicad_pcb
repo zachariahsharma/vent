@@ -1612,13 +1612,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/Comps/Models/ESP32-C6-MINI-1.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz -6.5 -5.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -6735,7 +6735,7 @@
 	)
 	(gr_rect
 		(start 124.475 66.975)
-		(end 164.525 109.975)
+		(end 164.525 107.575)
 		(stroke
 			(width 0.05)
 			(type default)

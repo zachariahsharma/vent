@@ -1,0 +1,106 @@
+{
+  "board": "/Users/zachsharma/Documents/Vynte/electronics/Vent/Vent.kicad_pcb",
+  "timestamp": "2026-06-10T01:50:10-0600",
+  "total_violations": 9,
+  "violation_counts": {
+    "silk_edge_clearance": 6,
+    "silk_over_copper": 3
+  },
+  "severity_counts": {
+    "error": 0,
+    "warning": 9,
+    "info": 0
+  },
+  "violations": [
+    {
+      "type": "silk_edge_clearance",
+      "severity": "warning",
+      "message": "Silkscreen clipped by board edge",
+      "location": {
+        "x": 11.45,
+        "y": 11.95,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_edge_clearance",
+      "severity": "warning",
+      "message": "Silkscreen clipped by board edge",
+      "location": {
+        "x": 11.45,
+        "y": 11.95,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_edge_clearance",
+      "severity": "warning",
+      "message": "Silkscreen clipped by board edge",
+      "location": {
+        "x": 11.45,
+        "y": 11.95,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_edge_clearance",
+      "severity": "warning",
+      "message": "Silkscreen clipped by board edge",
+      "location": {
+        "x": 11.45,
+        "y": 11.95,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_edge_clearance",
+      "severity": "warning",
+      "message": "Silkscreen clipped by board edge",
+      "location": {
+        "x": 11.45,
+        "y": 11.95,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_edge_clearance",
+      "severity": "warning",
+      "message": "Silkscreen clipped by board edge",
+      "location": {
+        "x": 11.45,
+        "y": 27.92,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 16.72,
+        "y": 17.555,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 13.5,
+        "y": 14.9,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 42.62,
+        "y": 25.0,
+        "unit": "mm"
+      }
+    }
+  ]
+}

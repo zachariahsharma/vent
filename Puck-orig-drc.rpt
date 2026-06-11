@@ -1,0 +1,197 @@
+** Drc report for Puck-orig.kicad_pcb **
+** Created on 2026-06-08T23:34:57-0600 **
+
+** Found 28 DRC violations **
+[text_on_edge_cuts]: Text (or dimension) on Edge.Cuts layer
+    Local override; error
+    @(152.9300 mm, 101.5250 mm): Dimension '21.475' on Edge.Cuts
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(140.3500 mm, 75.4400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(140.3500 mm, 76.8400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(141.0500 mm, 74.7400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(141.0500 mm, 76.1400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(141.0500 mm, 77.5400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(141.7500 mm, 75.4400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(141.7500 mm, 76.8400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(142.4500 mm, 74.7400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(142.4500 mm, 76.1400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(142.4500 mm, 77.5400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(143.1500 mm, 75.4400 mm): PTH pad 41 [GND] of U1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(143.1500 mm, 76.8400 mm): PTH pad 41 [GND] of U1
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(124.5000 mm, 67.0000 mm): Zone [GND] on F.Cu, priority 0
+    @(153.7500 mm, 99.7000 mm): Pad A1_B12 [GND] of J1 on F.Cu
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(124.5000 mm, 67.0000 mm): Zone [GND] on F.Cu, priority 0
+    @(153.7500 mm, 93.3000 mm): Pad B1_A12 [GND] of J1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(146.7000 mm, 121.0250 mm): Pad 1 [IO13] of U2 on B.Cu
+    @(146.7000 mm, 121.6750 mm): Pad 2 [IO11] of U2 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(146.7000 mm, 121.6750 mm): Pad 2 [IO11] of U2 on B.Cu
+    @(146.7000 mm, 122.3250 mm): Pad 3 [unconnected-(U2-ALERT-Pad3)] of U2 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(146.7000 mm, 122.3250 mm): Pad 3 [unconnected-(U2-ALERT-Pad3)] of U2 on B.Cu
+    @(146.7000 mm, 122.9750 mm): Pad 4 [GND] of U2 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(142.3000 mm, 121.6750 mm): Pad 7 [GND] of U2 on B.Cu
+    @(142.3000 mm, 121.0250 mm): Pad 8 [+3.3V] of U2 on B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(150.0000 mm, 103.0000 mm): Via [+3.3V] on F.Cu - B.Cu
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(124.5000 mm, 67.0000 mm): Rectangle on Edge.Cuts
+    @(124.6000 mm, 94.1500 mm): Reference field of J2
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(124.5000 mm, 67.0000 mm): Rectangle on Edge.Cuts
+    @(134.0500 mm, 60.7800 mm): Segment of U1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(124.5000 mm, 67.0000 mm): Rectangle on Edge.Cuts
+    @(152.4500 mm, 60.7800 mm): Segment of U1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(124.5000 mm, 67.0000 mm): Rectangle on Edge.Cuts
+    @(161.1000 mm, 92.0300 mm): Segment of J1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(124.5000 mm, 67.0000 mm): Rectangle on Edge.Cuts
+    @(161.1000 mm, 100.9700 mm): Segment of J1 on F.Silkscreen
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Footprints'.
+    Local override; warning
+    @(166.8150 mm, 82.5500 mm): Footprint U4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Footprints'.
+    Local override; warning
+    @(158.5000 mm, 96.5000 mm): Footprint J1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Footprints'.
+    Local override; warning
+    @(144.5000 mm, 122.0000 mm): Footprint U2
+
+** Found 23 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(148.7250 mm, 121.0250 mm): Track [IO13] on B.Cu, length 0.3889 mm
+    @(143.8850 mm, 86.1800 mm): Pad 21 [IO13] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(134.5000 mm, 69.6900 mm): Pad 2 [+3.3V] of U1 on F.Cu
+    @(142.5500 mm, 96.0000 mm): Pad 1 [+3.3V] of C4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(142.5500 mm, 96.0000 mm): Pad 1 [+3.3V] of C4 on F.Cu
+    @(142.5500 mm, 98.2500 mm): Pad 1 [+3.3V] of C5 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(146.2600 mm, 98.2500 mm): Pad 1 [+3.3V] of R7 on F.Cu
+    @(146.2600 mm, 100.5000 mm): Pad 1 [+3.3V] of R8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(146.2600 mm, 98.2500 mm): Pad 1 [+3.3V] of R7 on F.Cu
+    @(142.5500 mm, 98.2500 mm): Pad 1 [+3.3V] of C5 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(150.0000 mm, 103.0000 mm): Via [+3.3V] on F.Cu - B.Cu
+    @(146.2600 mm, 100.5000 mm): Pad 1 [+3.3V] of R8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(168.0000 mm, 81.6000 mm): Pad 5 [+3.3V] of U4 on F.Cu
+    @(146.2600 mm, 98.2500 mm): Pad 1 [+3.3V] of R7 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(141.3450 mm, 86.1800 mm): Pad 19 [IO11] of U1 on F.Cu
+    @(146.7000 mm, 121.6750 mm): Track [IO11] on B.Cu, length 2.2250 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(165.6300 mm, 82.5500 mm): Pad 2 [GND] of U4 on F.Cu
+    @(124.5000 mm, 67.0000 mm): Zone [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(137.7600 mm, 92.2500 mm): Pad 1 [Net-(J1-CC1)] of R3 on F.Cu
+    @(153.7500 mm, 97.7500 mm): Pad A5 [Net-(J1-CC1)] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(139.4000 mm, 94.5000 mm): Pad 2 [Net-(J1-CC2)] of R4 on F.Cu
+    @(153.7500 mm, 94.7500 mm): Pad B5 [Net-(J1-CC2)] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(134.5000 mm, 70.9600 mm): Pad 3 [EN] of U1 on F.Cu
+    @(143.2500 mm, 90.2000 mm): Pad 1 [EN] of C6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(143.2500 mm, 90.2000 mm): Pad 1 [EN] of C6 on F.Cu
+    @(127.4000 mm, 100.4000 mm): PTH pad 1 [EN] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(147.9000 mm, 98.2500 mm): Pad 2 [EN] of R7 on F.Cu
+    @(143.2500 mm, 90.2000 mm): Pad 1 [EN] of C6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(127.4000 mm, 97.9000 mm): PTH pad 2 [IO0] of J2
+    @(147.9000 mm, 100.5000 mm): Pad 2 [IO0] of R8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(147.9000 mm, 100.5000 mm): Pad 2 [IO0] of R8 on F.Cu
+    @(152.0000 mm, 84.9300 mm): Pad 27 [IO0] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(144.1100 mm, 93.7500 mm): Pad 2 [Net-(U4-EN)] of C3 on F.Cu
+    @(165.6300 mm, 83.5000 mm): Pad 3 [Net-(U4-EN)] of U4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(142.5500 mm, 93.7500 mm): Pad 1 [VBUS] of C3 on F.Cu
+    @(127.4000 mm, 90.4000 mm): PTH pad 5 [VBUS] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(153.7500 mm, 94.1000 mm): Pad B4_A9 [VBUS] of J1 on F.Cu
+    @(153.7500 mm, 98.9000 mm): Pad A4_B9 [VBUS] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(153.7500 mm, 94.1000 mm): Pad B4_A9 [VBUS] of J1 on F.Cu
+    @(142.5500 mm, 93.7500 mm): Pad 1 [VBUS] of C3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(165.6300 mm, 81.6000 mm): Pad 1 [VBUS] of U4 on F.Cu
+    @(153.7500 mm, 94.1000 mm): Pad B4_A9 [VBUS] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(127.4000 mm, 95.4000 mm): PTH pad 3 [USB_D+] of J2
+    @(134.5000 mm, 84.9300 mm): Pad 14 [USB_D+] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(127.4000 mm, 92.9000 mm): PTH pad 4 [USB_D-] of J2
+    @(134.5000 mm, 83.6600 mm): Pad 13 [USB_D-] of U1 on F.Cu
+
+** Found 0 Footprint errors **
+
+** End of Report **
