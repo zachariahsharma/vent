@@ -41,6 +41,27 @@ This is a geometric/design-rule incompatibility that needs human judgment to res
 
 All other Puck DRC items are clean (0 violations). Latest DRC report: `Puck-drc.rpt`.
 
+## Single-Sided Assembly (2026-06-10)
+
+All 15 components now populate **F.Cu only** (single reflow pass, no bottom-side
+assembly). R1, R2, and U2 (previously on B.Cu) were flipped to F.Cu. The board
+remains 2-layer copper with vias.
+
+Trade-off: U2 (MCP9808 temperature sensor) no longer faces the enclosure-bottom
+grill directly, accepted by design for assembly simplicity.
+
+Post-flip rework in the sensor pocket (right of U2, below J1's body):
+- R1 → (148.60, 105.70), R2 → (148.60, 104.80), both rot 0°.
+- GND: U2 pads 4–7 linked on F.Cu, one via (141.6, 104.675) to the B.Cu GND pour.
+- I2C_SDA / I2C_SCL: F.Cu escapes to vias, routed on B.Cu to the existing trunks.
+- +3.3V: R1/R2 link + via (149.1, 105.2) to trunk; U2.pad8 via (142.3, 106.5) +
+  B.Cu diagonal to the +3.3V trunk (145.35, 101.45). The bottom F.Cu channel is
+  too narrow to route under the SDA via given `min_copper_edge_clearance` 0.5mm,
+  so this leg goes on B.Cu.
+
+DRC after conversion: **0 violations**, 1 unconnected (the documented USB_D-
+A7↔B7 item below). Backup of pre-conversion board: `Puck.kicad_pcb.bak-pre-singlesided`.
+
 ## Applied PCB Fixes
 
 - **B.Cu GND zone stitching (5 vias)** — The B.Cu GND zone was electrically isolated from the F.Cu GND network and from two GND pads (U1.11, U1.52). Five vias were added to bridge: one southern stitching via at (140.05, 92.20), two at U1.11/U1.52 pads (137.35, 84.50) and (137.30, 85.45), and two inside the U1.49 thermal pad row at (141.275, 80.50) and (143.250, 80.50). Resolved 3 unconnected GND items.
