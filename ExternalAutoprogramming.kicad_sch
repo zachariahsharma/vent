@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "9c713742-c564-4a7c-9ab6-f40a01575e9b")
 	(paper "A4")
+	(title_block
+		(title "Vent")
+		(date "2026-08-19")
+		(rev "v0.1.0")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x03_Odd_Even"
 			(pin_names
@@ -671,7 +676,7 @@
 			(uuid "7b7fa21c-117f-4fa8-b910-7fbd0fa74ef5")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/baa2a2d6-ded2-444d-b992-886e8249722c"
 					(reference "J4")
 					(unit 1)
@@ -749,7 +754,7 @@
 			(uuid "4b7c8a85-6d90-46bc-b4c6-bff918cb7468")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/baa2a2d6-ded2-444d-b992-886e8249722c"
 					(reference "#PWR06")
 					(unit 1)
@@ -828,7 +833,7 @@
 			(uuid "8c6f35df-75e5-4bb7-9cd3-1b5db204434b")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/baa2a2d6-ded2-444d-b992-886e8249722c"
 					(reference "#PWR05")
 					(unit 1)
