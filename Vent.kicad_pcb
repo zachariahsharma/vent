@@ -164,6 +164,7 @@
 			(outputdirectory "")
 		)
 	)
+	(property "PROJECT_REV" "v0.1.0")
 	(footprint "MountingHole:MountingHole_2.2mm_M2"
 		(layer "F.Cu")
 		(uuid "0202be59-7603-491c-8a49-816f2bd1c40a")
@@ -5944,6 +5945,18 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "6cc9d7ea-99a0-4caf-b8b7-b480f6a57a68")
+	)
+	(gr_text "${PROJECT_REV}"
+		(at 152.527 62.611 0)
+		(layer "F.SilkS")
+		(uuid "c4ebeb74-49a6-4e63-a6fb-833b54b0ba0d")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
 	)
 	(segment
 		(start 150.2125 67.0775)
