@@ -267,7 +267,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "v0.1.0"
+      "sch_revision": "${PROJECT_REV}"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -709,7 +709,9 @@
       "3.3V-Buck-Boost"
     ]
   ],
-  "text_variables": {},
+  "text_variables": {
+    "PROJECT_REV": "v0.1.0"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0

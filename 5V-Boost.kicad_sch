@@ -7,7 +7,7 @@
 	(title_block
 		(title "Vent")
 		(date "2026-08-19")
-		(rev "v0.1.0")
+		(rev "${PROJECT_REV}")
 	)
 	(lib_symbols
 		(symbol "Converter_DCDC:TPS61023"
