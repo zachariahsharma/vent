@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "022ed4e4-da4d-47de-b46f-a61c6bd319cf")
 	(paper "A4")
+	(title_block
+		(title "Vent")
+		(date "2026-08-19")
+		(rev "v0.1.0")
+	)
 	(lib_symbols
 		(symbol "Device:C_Small"
 			(pin_numbers
@@ -1298,7 +1303,7 @@
 			(uuid "1e13d5b5-ae2f-4db5-b3fa-b4f6cc3a7044")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "#PWR025")
 					(unit 1)
@@ -1376,7 +1381,7 @@
 			(uuid "71934020-4674-4d1d-b2a5-54491f63acfa")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "#PWR027")
 					(unit 1)
@@ -1454,7 +1459,7 @@
 			(uuid "2d9bd5c8-3f09-4d32-bd42-8f2076d266d5")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "#PWR026")
 					(unit 1)
@@ -1557,7 +1562,7 @@
 			(uuid "2939cf1f-0e8d-41aa-850b-feac78c4c31a")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "U4")
 					(unit 1)
@@ -1639,7 +1644,7 @@
 			(uuid "89c475ac-711d-4fed-8726-525861548fb3")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "C_{OUT}2")
 					(unit 1)
@@ -1721,7 +1726,7 @@
 			(uuid "b6aa46cc-9c5e-48eb-9c49-fc1385763a0a")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "C_{IN}2")
 					(unit 1)
@@ -1799,7 +1804,7 @@
 			(uuid "0b560e6f-dbef-420a-a6b2-ffe0c8b45958")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "#PWR023")
 					(unit 1)
@@ -1877,7 +1882,7 @@
 			(uuid "18a9cd6c-ad24-4b4a-8460-fd3e0af3ee15")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "#PWR024")
 					(unit 1)
@@ -1959,7 +1964,7 @@
 			(uuid "ed73aade-baf0-404a-9b2d-8644a9de7e25")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "R_{BOT}2")
 					(unit 1)
@@ -2037,7 +2042,7 @@
 			(uuid "9afa1e49-41a3-4a82-a7d9-80e4fe7c9eae")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "L3")
 					(unit 1)
@@ -2119,7 +2124,7 @@
 			(uuid "fc67ea01-d6f8-40f1-ac24-02df84a296cb")
 		)
 		(instances
-			(project "Vynte PCB"
+			(project "Vent"
 				(path "/44080430-3c3a-4a58-87da-65c26034d41d/cbe65d49-7ad3-41aa-a0de-e365567d2c38"
 					(reference "R_{TOP}2")
 					(unit 1)
