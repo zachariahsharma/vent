@@ -8,6 +8,7 @@
 		(title "3.3V Buck-Boost Voltage Regulator")
 		(date "2026-08-19")
 		(rev "${PROJECT_REV}")
+		(company "Vynte")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"

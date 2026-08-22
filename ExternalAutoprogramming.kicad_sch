@@ -8,6 +8,7 @@
 		(title "External Autoprogramming")
 		(date "2026-08-19")
 		(rev "${PROJECT_REV}")
+		(company "Vynte")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x03_Odd_Even"
