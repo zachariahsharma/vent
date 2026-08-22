@@ -5,7 +5,7 @@
 	(uuid "9c713742-c564-4a7c-9ab6-f40a01575e9b")
 	(paper "A4")
 	(title_block
-		(title "Vent")
+		(title "External Autoprogramming")
 		(date "2026-08-19")
 		(rev "${PROJECT_REV}")
 	)

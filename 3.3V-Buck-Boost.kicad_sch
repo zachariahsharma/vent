@@ -5,7 +5,7 @@
 	(uuid "022ed4e4-da4d-47de-b46f-a61c6bd319cf")
 	(paper "A4")
 	(title_block
-		(title "Vent")
+		(title "3.3V Buck-Boost Voltage Regulator")
 		(date "2026-08-19")
 		(rev "${PROJECT_REV}")
 	)
