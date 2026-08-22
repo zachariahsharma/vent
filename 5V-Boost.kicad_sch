@@ -5,7 +5,7 @@
 	(uuid "9d893865-daca-441a-8ede-90164758ea22")
 	(paper "A4")
 	(title_block
-		(title "Vent")
+		(title "5V Boost Voltage Regulator")
 		(date "2026-08-19")
 		(rev "${PROJECT_REV}")
 	)
