@@ -8,6 +8,7 @@
 		(title "Vent")
 		(date "2026-08-19")
 		(rev "${PROJECT_REV}")
+		(company "Vynte")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x03_Pin"
