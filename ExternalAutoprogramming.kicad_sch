@@ -145,7 +145,7 @@
 				(pin bidirectional line
 					(at -5.08 2.54 0)
 					(length 3.81)
-					(name "RX"
+					(name "D-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -181,7 +181,7 @@
 				(pin bidirectional line
 					(at -5.08 0 0)
 					(length 3.81)
-					(name "TX"
+					(name "D+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -548,7 +548,7 @@
 		)
 		(uuid "e4a712fe-b7cc-4077-9b7c-1868ed4d865c")
 	)
-	(hierarchical_label "TX"
+	(hierarchical_label "D+"
 		(shape bidirectional)
 		(at 149.86 96.52 180)
 		(effects
@@ -559,7 +559,7 @@
 		)
 		(uuid "2de9417d-0ecc-45b7-9f99-ab0e010d5f89")
 	)
-	(hierarchical_label "RX"
+	(hierarchical_label "D-"
 		(shape bidirectional)
 		(at 149.86 93.98 180)
 		(effects
