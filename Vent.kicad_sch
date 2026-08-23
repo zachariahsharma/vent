@@ -2984,7 +2984,7 @@
 		)
 		(uuid "191600a8-9987-4782-b7db-cd8db4adfd1f")
 	)
-	(label "RXD0"
+	(label "D+"
 		(at 41.91 22.86 0)
 		(effects
 			(font
@@ -3074,7 +3074,7 @@
 		)
 		(uuid "70e6d91a-c4bb-4ebd-9434-03718ff7faa7")
 	)
-	(label "TXD0"
+	(label "D-"
 		(at 41.91 25.4 0)
 		(effects
 			(font
@@ -3084,7 +3084,7 @@
 		)
 		(uuid "7886b772-a38c-4613-833f-b304796de1f4")
 	)
-	(label "TXD0"
+	(label "D-"
 		(at 181.61 59.69 0)
 		(effects
 			(font
@@ -3104,7 +3104,7 @@
 		)
 		(uuid "8e8d2c2f-67e8-4d7c-a4ac-3b03a288f70f")
 	)
-	(label "RXD0"
+	(label "D+"
 		(at 181.61 57.15 0)
 		(effects
 			(font
@@ -5147,9 +5147,9 @@
 				(justify left)
 			)
 		)
-		(pin "RX" bidirectional
+		(pin "D+" bidirectional
 			(at 41.91 22.86 0)
-			(uuid "7418cf28-fbef-4208-8ec6-8b70d6d71e30")
+			(uuid "181bc27e-315d-4122-9530-5edb431804e4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5157,9 +5157,9 @@
 				(justify right)
 			)
 		)
-		(pin "TX" bidirectional
+		(pin "D-" bidirectional
 			(at 41.91 25.4 0)
-			(uuid "23bd4f9e-4fb3-4da2-b85f-53d651e5900e")
+			(uuid "3ae55c5c-1698-42a9-9c10-11e36d4b459d")
 			(effects
 				(font
 					(size 1.27 1.27)
