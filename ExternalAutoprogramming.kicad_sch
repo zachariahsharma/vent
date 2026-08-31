@@ -508,6 +508,10 @@
 			(embedded_fonts no)
 		)
 	)
+	(no_connect
+		(at 168.91 96.52)
+		(uuid "172fa6f3-fb3d-45ce-a6cd-27a36c22dfd5")
+	)
 	(wire
 		(pts
 			(xy 139.7 99.06) (xy 149.86 99.06)
@@ -580,17 +584,6 @@
 			(justify left)
 		)
 		(uuid "826360a0-1ac2-4064-bfe8-a2b08d98c437")
-	)
-	(hierarchical_label "BOOT"
-		(shape bidirectional)
-		(at 168.91 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9268ca86-4814-493d-9200-4fdc7a9672d8")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")

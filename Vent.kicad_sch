@@ -2765,6 +2765,10 @@
 		(uuid "9147daa6-94db-4637-b40f-03a1b00c0a2c")
 	)
 	(no_connect
+		(at 181.61 87.63)
+		(uuid "92de2d1c-d152-4767-a460-8a41971b446d")
+	)
+	(no_connect
 		(at 181.61 52.07)
 		(uuid "96889f77-cbe5-4205-8683-b5c31f3e7e65")
 	)
@@ -3037,26 +3041,6 @@
 			(justify left bottom)
 		)
 		(uuid "56f28260-0425-430b-b5fb-4bef2e1ed7ad")
-	)
-	(label "IO9"
-		(at 24.13 22.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5e389bfe-c51a-416c-9f1b-b2ffddde9bb6")
-	)
-	(label "IO9"
-		(at 181.61 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "604ea7af-9d91-4d3d-986b-10147d7c1281")
 	)
 	(label "BAT+"
 		(at 22.86 35.56 180)
@@ -5119,16 +5103,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "BOOT" bidirectional
-			(at 24.13 22.86 180)
-			(uuid "d00cf3f4-c15d-473a-bbe5-978d5f0ae9f4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "EN" input
