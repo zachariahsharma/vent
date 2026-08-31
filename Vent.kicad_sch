@@ -2753,6 +2753,10 @@
 		(uuid "633c1fa6-2e5b-4c7b-9367-eee6bf8f533c")
 	)
 	(no_connect
+		(at 154.94 39.37)
+		(uuid "74e25a3a-fd35-4e8f-9642-1659853dbe53")
+	)
+	(no_connect
 		(at 111.76 63.5)
 		(uuid "8c93c11e-6df9-446d-923f-02de42ad8f03")
 	)
@@ -3133,16 +3137,6 @@
 			(justify right bottom)
 		)
 		(uuid "bebb6728-c894-4e7a-9ff5-914162d53e29")
-	)
-	(label "VBAT"
-		(at 154.94 39.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c0710406-da9c-4427-86e4-51dcf5ce8049")
 	)
 	(label "IO1"
 		(at 111.76 48.26 180)
