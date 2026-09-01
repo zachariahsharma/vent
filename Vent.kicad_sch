@@ -3154,16 +3154,6 @@
 		)
 		(uuid "0fb41bc4-97e0-47f9-8549-7b77a4bbfb4f")
 	)
-	(label "EN"
-		(at 24.13 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "134f4b14-c208-4b8e-b45e-66feac90fe66")
-	)
 	(label "D+"
 		(at 41.91 22.86 0)
 		(effects
@@ -5593,16 +5583,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "EN" input
-			(at 24.13 25.4 180)
-			(uuid "713ffc1d-c152-4de8-ac56-a75c99eccab8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "D+" bidirectional
