@@ -377,6 +377,10 @@
 		(at 149.86 99.06)
 		(uuid "32799fdf-3867-46ef-9a70-b4d5f4e09a72")
 	)
+	(no_connect
+		(at 168.91 93.98)
+		(uuid "7cd774eb-3f1b-44c9-b827-ca00fe52d577")
+	)
 	(wire
 		(pts
 			(xy 171.45 99.06) (xy 168.91 99.06)
@@ -418,17 +422,6 @@
 			(justify right)
 		)
 		(uuid "77c1a571-20fd-4aef-a7ba-3684e2eda421")
-	)
-	(hierarchical_label "EN"
-		(shape input)
-		(at 168.91 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "826360a0-1ac2-4064-bfe8-a2b08d98c437")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
