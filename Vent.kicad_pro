@@ -688,17 +688,13 @@
         "uuid": "44080430-3c3a-4a58-87da-65c26034d41d"
       }
     ],
-    "used_designators": "SW1,C_{OUT}2,L2-3,R_{BOT}2,R_{TOP}2,S1,C_{IN}2,U3-4,#PWR1,#PWR6,#PWR11-13,#PWR15,#PWR20,#PWR23-27,R4,C4,J1",
+    "used_designators": "SW1,C_{OUT}2,L2-3,R_{BOT}2,R_{TOP}2,S1,C_{IN}2,U3-4,#PWR1,#PWR6,#PWR11-13,#PWR15,#PWR20,#PWR23-27,R4,C4,J1,J4",
     "variants": []
   },
   "sheets": [
     [
       "44080430-3c3a-4a58-87da-65c26034d41d",
       "Vent"
-    ],
-    [
-      "baa2a2d6-ded2-444d-b992-886e8249722c",
-      "ExternalAutoprogramming (Low-Profile Female)"
     ],
     [
       "2412c928-f5bc-4770-b369-2941957c7d2e",
