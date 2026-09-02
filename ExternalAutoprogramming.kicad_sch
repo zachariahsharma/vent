@@ -658,6 +658,22 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Tag-Connect" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TC2030-IDC-NL" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c17277f4-ec88-4f3a-830c-9abf29c8a5da")
 		)

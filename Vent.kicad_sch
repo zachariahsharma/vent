@@ -3396,6 +3396,30 @@
 				)
 			)
 		)
+		(property "Digi-Key_PN" "732-5008-ND" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "151031VS06000" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7dcc2690-9790-4b20-b7db-682444270b1a")
 		)
@@ -3716,6 +3740,30 @@
 				)
 			)
 		)
+		(property "Digi-Key_PN" "YAG2509CT-ND" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0201FR-07220RL" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1f1d955a-cd39-4bd7-ab75-68d2b611def4")
 		)
@@ -3795,6 +3843,30 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Digi-Key_PN" "311-1MMCT-ND" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0201FR-071ML" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3877,6 +3949,30 @@
 				)
 			)
 		)
+		(property "Digi-Key_PN" "CKN10502CT-ND" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PTS810SJM250SMTR LFS" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "06606653-38f1-4817-bc6c-e225a1e6cb2f")
 		)
@@ -3957,6 +4053,30 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Digi-Key_PN" "1965-ESP32-H2-MINI-1-H4SCT-ND" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Espressif Systems" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ESP32-H2-MINI-1-H4S" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "38"
@@ -4350,6 +4470,30 @@
 				)
 			)
 		)
+		(property "Digi-Key_PN" "YAG2603CT-ND" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0201FR-07330KL" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4c18b948-06cc-4ff8-ae96-7eaa05734ecf")
 		)
@@ -4509,6 +4653,30 @@
 				)
 			)
 		)
+		(property "Digi-Key_PN" "311-1597-1-ND" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0201KRX5R7BB104" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "28394a18-c2c0-4aff-a1f9-b433ce3b5858")
 		)
@@ -4592,7 +4760,7 @@
 				)
 			)
 		)
-		(property "Digi-Key_PN" "455-2247-ND"
+		(property "Digi-Key_PN" "455-B2B-XH-A-ND"
 			(at 93.98 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -4604,7 +4772,7 @@
 				(justify left)
 			)
 		)
-		(property "MPN" "B2B-XH-A(LF)(SN)"
+		(property "MPN" "B2B-XH-A"
 			(at 96.52 30.48 0)
 			(hide yes)
 			(show_name no)
