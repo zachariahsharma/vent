@@ -41,3 +41,10 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+# macOS metadata and regenerable local analysis
+.DS_Store
+analysis/
+
+# Keep the saved production package together, including its CSV exports
+!production/*.csv
