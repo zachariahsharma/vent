@@ -162,7 +162,7 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -211,6 +211,7 @@
       ],
       "track_widths": [
         0.0,
+        0.2,
         0.25,
         0.3,
         0.35,
@@ -256,6 +257,18 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.5
         }
       ],
       "zones_allow_external_fillets": false
@@ -553,7 +566,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "/Users/zachsharma/Documents/vent/exports/gerbeer/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -688,7 +701,7 @@
         "uuid": "44080430-3c3a-4a58-87da-65c26034d41d"
       }
     ],
-    "used_designators": "SW1,C_{OUT}2,L2-3,R_{BOT}2,R_{TOP}2,S1,C_{IN}2,U3-4,#PWR11-13,#PWR15,#PWR20,#PWR23-27",
+    "used_designators": "SW1,L2-3,R_{BOT}2,R_{TOP}2,C_{IN}2,S1,U3-4,C_{OUT}2,#PWR11-13,#PWR15,#PWR20,#PWR23-27",
     "variants": []
   },
   "sheets": [
@@ -710,7 +723,7 @@
     ]
   ],
   "text_variables": {
-    "PROJECT_REV": "v0.1"
+    "PROJECT_REV": "v0.5.0"
   },
   "tuning_profiles": {
     "meta": {
