@@ -18,6 +18,6 @@ Local backups, analysis caches, and per-user KiCad settings are excluded from ve
 
 ## Repository copies
 
-Gitea is the development repository. The public GitHub showcase starts from a clean snapshot of this hardware project; it intentionally does not include the earlier development history.
+Gitea is the development repository. The public GitHub copy includes the development history with credential files removed from every revision. Commit author and committer identities have been normalized to Zachariah K. Sharma at the repository owner's request; Gitea retains the original history.
 
 No open-source license has been selected.
